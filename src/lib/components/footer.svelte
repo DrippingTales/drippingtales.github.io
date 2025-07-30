@@ -8,9 +8,9 @@
 
 <style>
   footer {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     font-size: 0.8em;
-    padding-block: 0.7em;
+    padding-bottom: 0.5em;
     display: flex;
     justify-content: center;
 
