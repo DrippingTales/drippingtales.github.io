@@ -10,7 +10,7 @@
 </script>
 
 <div
-  class="flex w-full flex-col space-y-4 overflow-hidden border-1 border-gray-400 bg-black/50 pb-2 shadow-lg"
+  class="flex w-full flex-col space-y-4 overflow-hidden border-1 border-gray-400 bg-black/50 pb-2 shadow-lg rounded-xl"
 >
   <img
     class="aspect-square w-100 border-b-1 border-gray-400"

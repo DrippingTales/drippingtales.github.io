@@ -15,7 +15,7 @@
 
   <div>
     <img
-      class="mx-auto aspect-square w-128 border-1 border-gray-400"
+      class="mx-auto aspect-square w-128 border-1 border-gray-400 rounded-xl"
       src={imageUrl}
       alt=""
     />
