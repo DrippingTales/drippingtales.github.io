@@ -12,15 +12,15 @@
   <meta name="description" content="Artists from Dripping Tales Records" />
 </svelte:head>
 
-<section class="space-y-7" use:glitch={{ event: "load" }}>
-  <h1 class="page-title highlight text-center text-4xl">
+<section class="space-y-7">
+  <h1 class="page-title highlight text-center text-4xl" use:glitch>
     <mark>_artists</mark>
   </h1>
 
   <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-6 sm:grid-cols-2">
     {#each data.artists as artist}
       <a class="size-fit" href={`/artists/${artist.slug}`}>
-        <div class="h-full w-full">
+        <div class="h-full w-full" use:glitch>
           <ArtistCard {artist} />
         </div>
       </a>

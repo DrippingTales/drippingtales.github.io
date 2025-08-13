@@ -12,15 +12,15 @@
   <meta name="description" content="Releases from Dripping Tales Records" />
 </svelte:head>
 
-<section class="space-y-7" use:glitch={{ event: "load" }}>
-  <h1 class="page-title highlight text-center text-4xl">
+<section class="space-y-7">
+  <h1 class="page-title highlight text-center text-4xl" use:glitch>
     <mark>_releases</mark>
   </h1>
 
   <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-6 sm:grid-cols-2">
     {#each data.releases as release}
       <a class="size-fit" href={`/releases/${release.slug}`}>
-        <div class="h-full w-full">
+        <div class="h-full w-full" use:glitch>
           <ReleaseCard {release} />
         </div>
       </a>

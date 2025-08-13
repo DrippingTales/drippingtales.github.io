@@ -13,24 +13,26 @@
   })
 </script>
 
-<section class="flex flex-col space-y-8" use:glitch>
+<section class="flex flex-col space-y-8">
   <div>
-    <img class="aspect-square mx-auto border-gray-400 border-2 w-64 rounded-full" src={imageUrl} alt="" />
+    <img class="aspect-square mx-auto border-gray-400 border-2 w-64 rounded-full" src={imageUrl} alt="" use:glitch />
     
-    <hgroup>
+    <hgroup use:glitch>
       <h1 class="highlight text-4xl text-center">
         <mark>{data.meta.name}</mark>
       </h1>
     </hgroup>
   </div>
+
+  {#if data.meta.social}
+    <div use:glitch>
+      <SocialLinks {...data.meta.social} />
+    </div>
+  {/if}
     
-  <div class="text-center space-y-3">
+  <div class="text-center space-y-3" use:glitch>
     {#each data.meta.description[language].split(/[\r\n]+/) as paragraph}
       <p>{paragraph}</p>
     {/each}
   </div>
-
-  {#if data.meta.social}
-    <SocialLinks {...data.meta.social} />
-  {/if}
 </section>
