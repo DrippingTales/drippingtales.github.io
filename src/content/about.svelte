@@ -48,6 +48,7 @@
       bandcamp="https://drippingtalesrecords.bandcamp.com/music"
       instagram="https://instagram.com/drippingtalesrecords"
       facebook="https://facebook.com/DrippingTalesRecords/"
+      email="drippingtalesrecords@gmail.com"
     />
   </div>
 </div>
