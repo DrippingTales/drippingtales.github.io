@@ -11,7 +11,9 @@
   })
 </script>
 
-<div class="flex min-h-full flex-col justify-center space-y-8">
+<div class="flex min-h-full flex-col justify-center space-y-8 sm:space-y-16">
+  <img class="w-96 pt-4 mx-auto" src="/assets/main/title.avif" alt="" use:glitch />
+
   <div class="social-links logo2" use:glitch>
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
