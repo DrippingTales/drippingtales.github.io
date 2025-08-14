@@ -1,13 +1,12 @@
 import { error } from "@sveltejs/kit"
+import type { Release } from "$lib/types"
 
-export async function load() {
+export async function load({ fetch }) {
   try {
-    const about = await import("/src/content/about.svelte")
+    const response = await fetch("api/releases")
+    const releases: Release[] = await response.json()
 
-    return {
-      content: about.default,
-      meta: about.metadata
-    }
+    return { releases }
   } catch (_error) {
     error(404, "Nothing here 🤔")
   }
