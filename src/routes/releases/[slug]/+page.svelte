@@ -34,4 +34,10 @@
       <span>Compilation</span>
     {/if}
   </div>
+
+  <div class="text-center space-y-3" use:glitch>
+    {#each data.meta.storytelling.split(/[\r\n]+/) as paragraph}
+      <p>{paragraph}</p>
+    {/each}
+  </div>
 </section>
