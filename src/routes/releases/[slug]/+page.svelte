@@ -21,11 +21,12 @@
     />
   </div>
 
-  <div class="text-center" use:glitch>
+  <div class="text-center font-bold" use:glitch>
+    {data.meta.date.toString().slice(0, 4)} -
     {#if data.meta.kind == "album"}
-      <span>Album by {data.meta.artist}</span>
+      Album by {data.meta.artist}
     {:else if data.meta.kind == "compilation"}
-      <span>Compilation</span>
+      Compilation
     {/if}
   </div>
 
