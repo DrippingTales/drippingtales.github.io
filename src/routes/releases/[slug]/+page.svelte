@@ -13,12 +13,6 @@
     </h1>
   </hgroup>
 
-  {#if data.meta.social}
-    <div use:glitch>
-      <SocialLinks {...data.meta.social} />
-    </div>
-  {/if}
-
   <div use:glitch>
     <img
       class="mx-auto aspect-square w-128 border-1 border-gray-400 rounded-xl"
@@ -34,6 +28,12 @@
       <span>Compilation</span>
     {/if}
   </div>
+
+  {#if data.meta.social}
+    <div use:glitch>
+      <SocialLinks {...data.meta.social} />
+    </div>
+  {/if}
 
   <div class="text-center space-y-3" use:glitch>
     {#each data.meta.storytelling.split(/[\r\n]+/) as paragraph}
