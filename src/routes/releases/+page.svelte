@@ -2,14 +2,21 @@
   import { glitch } from "$lib/actions/glitch"
   import config from "$lib/config"
   import ReleaseCard from "$lib/components/release-card.svelte"
+  import SeoTags from "$lib/components/seo-tags.svelte"
 
   let { data } = $props()
+
+  let seoTags = {
+    title: `Releases ~ ${config.title}`,
+    description: "Releases from Dripping Tales Records.",
+    keywords: ["dripping tales", "releases"],
+    url: "/releases",
+    image: "/assets/main/logo-plain.avif"
+  }
 </script>
 
 <svelte:head>
-  <title>Releases ~ {config.title}</title>
-  <meta name="author" content={config.author} />
-  <meta name="description" content="Releases from Dripping Tales Records" />
+  <SeoTags {...seoTags} />
 </svelte:head>
 
 <section class="space-y-7">

@@ -2,14 +2,21 @@
   import { glitch } from "$lib/actions/glitch"
   import config from "$lib/config"
   import ArtistCard from "$lib/components/artist-card.svelte"
+  import SeoTags from "$lib/components/seo-tags.svelte"
 
   let { data } = $props()
+
+  let seoTags = {
+    title: `Artists ~ ${config.title}`,
+    description: "Artists from Dripping Tales Records.",
+    keywords: ["dripping tales", "artists"],
+    url: "/artists",
+    image: "/assets/main/logo-plain.avif"
+  }
 </script>
 
 <svelte:head>
-  <title>Artists ~ {config.title}</title>
-  <meta name="author" content={config.author} />
-  <meta name="description" content="Artists from Dripping Tales Records" />
+  <SeoTags {...seoTags} />
 </svelte:head>
 
 <section class="space-y-7">

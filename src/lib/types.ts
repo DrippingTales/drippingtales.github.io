@@ -9,3 +9,12 @@ export type Release = {
   date: string
   slug: string
 }
+
+export type MetaInfo = {
+  title?: string
+  description?: string
+  author?: string
+  image?: string
+  url?: string
+  keywords?: string[]
+}
