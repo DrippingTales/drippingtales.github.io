@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Footer from "$lib/components/footer.svelte"
   import Header from "$lib/components/header.svelte"
+  import Footer from "$lib/components/footer.svelte"
   import PageTransition from "./transition.svelte"
 
   import "@fontsource/ibm-plex-mono"
@@ -48,4 +48,5 @@
     min-width: 0;
     min-height: 0;
   }
+
 </style>

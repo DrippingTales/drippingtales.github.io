@@ -29,9 +29,7 @@
   <SeoTags {...seoTags} />
 </svelte:head>
 
-<div class="flex min-h-full flex-col justify-center space-y-8 py-8 sm:space-y-16">
-  <img class="mx-auto w-96" src="/assets/main/title.avif" alt="" use:glitch />
-
+<div class="flex min-h-full flex-col justify-center space-y-4 sm:space-y-8">
   <div class="social-links logo2" use:glitch>
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
