@@ -5,7 +5,7 @@
   --primary-color: #ffffff;
   --secondary-color: #8f8e8e;
   --tertiary-color: #b4dce7;
-  --background-color: #070707;
+  --background-color: #0F0F0F;
   --code-background-color: #3e3549;
   --text-1: var(--gray-3);
   --text-2: var(--gray-5);
@@ -37,7 +37,6 @@ html {
   color: var(--text-1);
   accent-color: var(--link);
   background-color: var(--background-color);
-  /* background-image: url("/assets/main/background.avif"); */
   background-image: url("/assets/main/background.svg");
   animation: bg-scrolling 20s infinite;
 }
