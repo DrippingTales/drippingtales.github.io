@@ -11,5 +11,4 @@ storytelling: |
 social:
   soundcloud: https://soundcloud.com/drippingtales/sets/lesky-nova-chimera
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/ep-nova-chimera
-slug: lesky-nova-chimera
 ---

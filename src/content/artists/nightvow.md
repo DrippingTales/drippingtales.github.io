@@ -1,6 +1,5 @@
 ---
 name: Nightvow
-slug: nightvow
 social:
   soundcloud: https://soundcloud.com/user-nightvow
   facebook: https://www.facebook.com/arwin.shams

@@ -1,6 +1,5 @@
 ---
 name: Omnysphere
-slug: omnysphere
 social:
   soundcloud: https://soundcloud.com/omnysphere
   facebook: https://www.facebook.com/omnyspherepsy

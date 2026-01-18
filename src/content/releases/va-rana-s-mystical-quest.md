@@ -10,5 +10,4 @@ storytelling: |
 social:
   soundcloud: https://soundcloud.com/drippingtales/sets/ranas-mystical-quest-va01
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/va-ranas-mystical-quest
-slug: va-rana-s-mystical-quest
 ---

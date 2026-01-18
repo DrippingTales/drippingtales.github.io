@@ -1,6 +1,5 @@
 ---
 name: Goutte
-slug: goutte
 social:
   soundcloud: https://soundcloud.com/djgouttes
   facebook: https://www.facebook.com/djgoutte

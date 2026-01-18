@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { onMount } from "svelte"
   import { glitch } from "$lib/actions/glitch"
   import config from "$lib/config"
 </script>
 
-<div class="sticky w-full top-0 z-50 bg-black/96 border-b-1 border-gray-400 shadow-white/10 shadow-xl/50">
+<div class="crt sticky w-full top-0 z-50 bg-black/96 border-b-1 border-gray-400 shadow-white/10 shadow-xl/50">
   <nav class="align-center flex flex-col sm:justify-between py-2 sm:flex-row sm:space-y-0 mx-auto max-w-3xl px-8">
     <a class="text-primary my-auto mx-auto sm:ml-0" href="/" use:glitch={{ playMode: "click" }}>
       <img

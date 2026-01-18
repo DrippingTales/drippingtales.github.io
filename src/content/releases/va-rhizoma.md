@@ -9,5 +9,4 @@ storytelling: |
 social:
   soundcloud: https://soundcloud.com/drippingtales/sets/rhizoma-va02
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/va-rhizoma
-slug: va-rhizoma
 ---

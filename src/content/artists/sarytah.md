@@ -1,6 +1,5 @@
 ---
 name: Sarytah
-slug: sarytah
 social:
   soundcloud: https://soundcloud.com/sarah-tabin
   facebook: https://www.facebook.com/sarah.tabin

@@ -1,6 +1,5 @@
 ---
 name: Mysmatic
-slug: mysmatic
 social:
   soundcloud: https://soundcloud.com/mysmatic
   facebook: https://www.facebook.com/Mysmatic

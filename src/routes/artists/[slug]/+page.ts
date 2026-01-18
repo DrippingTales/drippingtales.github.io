@@ -7,7 +7,7 @@ export async function load({ params }) {
 
     return {
       content: artist.default,
-      meta: artist.metadata
+      meta: { ...artist.frontmatter, slug: params.slug }
     }
   } catch (_error) {
     error(404, "Nothing here 🤔")

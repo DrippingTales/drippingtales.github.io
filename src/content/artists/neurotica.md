@@ -1,6 +1,5 @@
 ---
 name: Neurotica
-slug: neurotica
 social:
   soundcloud: https://soundcloud.com/djneurotica
   facebook: https://www.facebook.com/alix.deswaziere

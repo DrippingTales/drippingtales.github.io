@@ -1,6 +1,5 @@
 ---
 name: Acröfen
-slug: acrofen
 social:
   soundcloud: https://soundcloud.com/acrofen
   facebook: https://www.facebook.com/Acrofen

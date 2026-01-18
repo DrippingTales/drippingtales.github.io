@@ -1,6 +1,5 @@
 ---
 name: Hivemind
-slug: hivemind
 social:
   soundcloud: https://soundcloud.com/hivemindpsy
   facebook: https://www.facebook.com/hivemindpsy

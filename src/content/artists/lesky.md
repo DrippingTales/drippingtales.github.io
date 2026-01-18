@@ -1,6 +1,5 @@
 ---
 name: Lesky
-slug: lesky
 social:
   soundcloud: https://soundcloud.com/cl-ment-lescail
   facebook: https://www.facebook.com/clement.lesky

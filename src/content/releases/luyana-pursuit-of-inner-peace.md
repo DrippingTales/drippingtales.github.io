@@ -9,5 +9,4 @@ storytelling: |
 social:
   soundcloud: https://soundcloud.com/drippingtales/sets/luyana-pursuit-of-inner-peace
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/pursuit-of-inner-peace
-slug: luyana-pursuit-of-inner-peace
 ---

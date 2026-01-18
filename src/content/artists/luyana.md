@@ -1,6 +1,5 @@
 ---
 name: Luyana
-slug: luyana
 social:
   soundcloud: https://soundcloud.com/louloumba-luyana
   facebook: https://www.facebook.com/louloumbaba

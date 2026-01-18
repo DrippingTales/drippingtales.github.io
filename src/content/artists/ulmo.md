@@ -1,6 +1,5 @@
 ---
 name: Ulmo
-slug: ulmo
 social:
   soundcloud: https://soundcloud.com/ulmosounds
   facebook: https://www.facebook.com/ulmosounds
