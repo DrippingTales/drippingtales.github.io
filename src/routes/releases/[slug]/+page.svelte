@@ -1,5 +1,6 @@
 <script lang="ts">
   import { glitch } from "$lib/actions/glitch"
+  import Image from "$lib/components/image.svelte"
   import SocialLinks from "$lib/components/social-links.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
 
@@ -20,21 +21,21 @@
 </svelte:head>
 
 <section class="flex flex-col space-y-8">
-  <hgroup use:glitch>
+  <hgroup>
     <h1 class="highlight text-center text-4xl">
       <mark>{data.meta.name}</mark>
     </h1>
   </hgroup>
 
-  <div use:glitch>
-    <img
+  <div>
+    <Image
       class="mx-auto aspect-square w-128 rounded-xl border-1 border-gray-400"
       src={imageUrl}
       alt=""
     />
   </div>
 
-  <div class="text-center font-bold" use:glitch>
+  <div class="text-center font-bold">
     {data.meta.date.toString().slice(0, 4)} -
     {#if data.meta.kind == "album"}
       Album by {data.meta.artist}
@@ -44,12 +45,12 @@
   </div>
 
   {#if data.meta.social}
-    <div use:glitch>
+    <div>
       <SocialLinks {...data.meta.social} />
     </div>
   {/if}
 
-  <div class="space-y-3 text-center" use:glitch>
+  <div class="space-y-3 text-center">
     {#each data.meta.storytelling.split(/[\r\n]+/) as paragraph}
       <p>{paragraph}</p>
     {/each}

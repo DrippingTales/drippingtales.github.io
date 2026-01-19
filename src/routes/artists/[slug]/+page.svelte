@@ -2,6 +2,7 @@
   import { onMount } from "svelte"
   import { glitch } from "$lib/actions/glitch"
   import { getLanguage, defaultLanguage } from "$lib/languages"
+  import Image from "$lib/components/image.svelte"
   import SocialLinks from "$lib/components/social-links.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
 
@@ -28,14 +29,13 @@
 
 <section class="flex flex-col space-y-8">
   <div>
-    <img
+    <Image
       class="mx-auto aspect-square w-64 rounded-full border-2 border-gray-400"
       src={imageUrl}
       alt=""
-      use:glitch
     />
 
-    <hgroup use:glitch>
+    <hgroup>
       <h1 class="highlight text-center text-4xl">
         <mark>{data.meta.name}</mark>
       </h1>
@@ -43,12 +43,12 @@
   </div>
 
   {#if data.meta.social}
-    <div use:glitch>
+    <div>
       <SocialLinks {...data.meta.social} />
     </div>
   {/if}
 
-  <div class="space-y-3 text-center" use:glitch>
+  <div class="space-y-3 text-center">
     {#each data.meta.description[language].split(/[\r\n]+/) as paragraph}
       <p>{paragraph}</p>
     {/each}

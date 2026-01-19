@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Release } from "$lib/types"
+  import Image from "$lib/components/image.svelte"
 
   type Props = {
     release: Release
@@ -12,7 +13,7 @@
 <div
   class="flex w-full flex-col space-y-4 overflow-hidden border-1 border-gray-400 bg-black/50 pb-2 shadow-lg rounded-xl"
 >
-  <img
+  <Image
     class="aspect-square w-100 border-b-1 border-gray-400"
     src={imageUrl}
     alt=""

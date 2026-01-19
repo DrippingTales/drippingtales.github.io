@@ -30,7 +30,7 @@
 </svelte:head>
 
 <div class="flex min-h-full flex-col justify-center space-y-4 sm:space-y-8">
-  <div class="social-links logo2" use:glitch>
+  <div class="social-links logo2">
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
       bandcamp="https://drippingtalesrecords.bandcamp.com/music"
@@ -40,7 +40,7 @@
     />
   </div>
 
-  <div class="space-y-4" use:glitch>
+  <div class="space-y-4">
     {#if language == "en"}
       <p class="text-center">
         Dripping Tales Records is a collective of friends passionate about the dark and twisted
@@ -85,10 +85,10 @@
   </div>
 
   <div class="mx-auto">
-    <h1 class="highlight mb-8 text-center text-4xl" use:glitch>_last_release</h1>
+    <h1 class="highlight mb-8 text-center text-4xl">_last_release</h1>
 
     <a class="size-fit" href={`/releases/${lastRelease.slug}`}>
-      <div class="h-full w-full" use:glitch>
+      <div class="h-full w-full">
         <ReleaseCard release={lastRelease} />
       </div>
     </a>
