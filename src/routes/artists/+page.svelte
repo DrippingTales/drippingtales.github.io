@@ -24,7 +24,7 @@
     <mark>_artists</mark>
   </h1>
 
-  <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-6 sm:grid-cols-2">
+  <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {#each data.artists as artist}
       <a class="size-fit" href={`/artists/${artist.slug}`}>
         <div class="h-full w-full" use:glitch>
