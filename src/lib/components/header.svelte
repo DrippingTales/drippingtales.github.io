@@ -15,7 +15,7 @@
         />
       </a>
 
-      <div class="flex flex-row justify-center sm:justify-end space-x-1 [&>*]:my-auto">
+      <div class="pt-2 sm:pt-0 flex flex-row justify-center sm:justify-end space-x-1 [&>*]:my-auto">
         <span class="link hover:text-white" use:glitch={{ playMode: "click" }}>
           <a href="/">about</a>
         </span>
