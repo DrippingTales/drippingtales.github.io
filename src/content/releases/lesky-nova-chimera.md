@@ -9,6 +9,9 @@ storytelling: |
   Enter the madness of a man who plays with nature and science…
   Discover the epic and relentless darkpsy sci-fi tale by Lesky.
 social:
-  soundcloud: https://soundcloud.com/drippingtales/sets/lesky-nova-chimera
+  apple_music: https://music.apple.com/us/album/nova-chimera/1746913144
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/ep-nova-chimera
+  deezer: https://www.deezer.com/en/album/588083992
+  soundcloud: https://soundcloud.com/drippingtales/sets/lesky-nova-chimera
+  spotify: https://open.spotify.com/track/5hSc9VVh9UmNb4ec0SGBlx
 ---
