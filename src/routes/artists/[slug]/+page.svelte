@@ -29,11 +29,13 @@
 
 <section class="flex flex-col space-y-8">
   <div>
-    <Image
-      class="mx-auto aspect-square w-64 rounded-full border-2 border-gray-400"
-      src={imageUrl}
-      alt=""
-    />
+    <div class="mx-auto bg-black/70 aspect-square w-64 rounded-full border-2 border-gray-400">
+      <Image
+        class="w-64 rounded-full"
+        src={imageUrl}
+        alt=""
+      />
+    </div>
 
     <hgroup>
       <h1 class="highlight text-center text-4xl">

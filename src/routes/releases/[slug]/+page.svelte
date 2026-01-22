@@ -27,9 +27,9 @@
     </h1>
   </hgroup>
 
-  <div>
+  <div class="mx-auto bg-black/70 aspect-square w-128 border-1 border-gray-400 rounded-xl">
     <Image
-      class="mx-auto aspect-square w-128 rounded-xl border-1 border-gray-400"
+      class="w-128 rounded-xl"
       src={imageUrl}
       alt=""
     />

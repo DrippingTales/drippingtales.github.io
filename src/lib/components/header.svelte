@@ -7,7 +7,7 @@
 <header>
   <div class="sticky w-full top-0 z-50 bg-black border-b-1 border-gray-400">
     <nav class="align-center flex flex-col sm:justify-between py-2 sm:flex-row sm:space-y-0 mx-auto max-w-5xl px-8">
-      <a class="text-primary my-auto mx-auto sm:ml-0" href="/" use:glitch={{ playMode: "click" }}>
+      <a class="text-primary my-auto mx-auto sm:ml-0">
         <img
           class="h-8"
           src="/assets/main/title.avif"
@@ -35,3 +35,18 @@
     <Banner />
   </div>
 </header>
+
+<style>
+  img {
+    animation: fade-in 0.5s ease-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
