@@ -36,7 +36,7 @@
     </nav>
   </div>
 
-  <div class="order-3 z-1 sticky top-[52px] sm:top-[44px] border-t-1 border-b-1 text-gray-400 border-gray-400 bg-black">
+  <div class="order-3 z-1 sticky top-[52px] sm:top-[44px] border-t-1 border-b-1 text-gray-400 border-gray-400 bg-black/90">
     <div class="mx-auto text-center max-w-4xl mx-2">
       <PageTitle/>
     </div>

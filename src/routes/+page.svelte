@@ -29,7 +29,7 @@
   <SeoTags {...seoTags} />
 </svelte:head>
 
-<div class="flex min-h-full flex-col justify-center space-y-4 sm:space-y-8">
+<div class="flex min-h-full flex-col justify-center space-y-4 pb-6 pt-2 sm:pb-0 sm:pt-0 sm:space-y-8">
   <div>
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
@@ -84,8 +84,8 @@
     {/if}
   </div>
 
-  <div class="mx-auto">
-    <h1 class="highlight m-8 text-center text-4xl">
+  <div class="mx-auto space-y-4">
+    <h1 class="highlight text-center text-4xl">
       | last release |
     </h1>
 

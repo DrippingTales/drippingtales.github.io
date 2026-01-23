@@ -13,4 +13,8 @@ social:
   deezer: https://www.deezer.com/en/album/567822731
   soundcloud: https://soundcloud.com/drippingtales/sets/ranas-mystical-quest-va01
   spotify: https://open.spotify.com/album/0d7cy2QHydD9Gv8adci7bg
+artwork_by:
+  name: Baakka Design
+master_by:
+  name: o3 StudioGoa
 ---

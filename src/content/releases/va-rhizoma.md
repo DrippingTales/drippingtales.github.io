@@ -12,4 +12,8 @@ social:
   deezer: https://www.deezer.com/en/album/569257101
   soundcloud: https://soundcloud.com/drippingtales/sets/rhizoma-va02
   spotify: https://open.spotify.com/album/2EgJwRlBuYGdD0P5RTJs2i
+artwork_by:
+  name: Raphaël Verguin
+master_by:
+  name: Omnysphere
 ---

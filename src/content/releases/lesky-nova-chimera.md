@@ -14,4 +14,8 @@ social:
   deezer: https://www.deezer.com/en/album/588083992
   soundcloud: https://soundcloud.com/drippingtales/sets/lesky-nova-chimera
   spotify: https://open.spotify.com/track/5hSc9VVh9UmNb4ec0SGBlx
+artwork_by:
+  name: Sara Oudin
+master_by:
+  name: Orestis @ Celestial Textures
 ---

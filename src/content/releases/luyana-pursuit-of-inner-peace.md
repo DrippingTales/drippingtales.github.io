@@ -12,4 +12,9 @@ social:
   deezer: https://www.deezer.com/en/album/704814761
   soundcloud: https://soundcloud.com/drippingtales/sets/luyana-pursuit-of-inner-peace
   spotify: https://open.spotify.com/album/696GEMWmr24IJRmf9LUQDe
+artwork_by:
+  name: Nebara
+  link: https://www.instagram.com/nabera_artwork/
+master_by:
+  name: Ulmo
 ---

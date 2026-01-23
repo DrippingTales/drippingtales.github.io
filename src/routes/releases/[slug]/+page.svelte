@@ -14,6 +14,10 @@
     url: `/releases/${data.meta.slug}`,
     image: imageUrl
   }
+
+  function asParagraphs(content) {
+    return content.split(/[\r\n]+/).filter((p: string) => p.trim())
+  }
 </script>
 
 <svelte:head>
@@ -53,8 +57,22 @@
   </div>
 
   <div class="space-y-3 text-center">
-    {#each data.meta.storytelling.split(/[\r\n]+/) as paragraph}
+    {#each asParagraphs(data.meta.storytelling) as paragraph}
       <p>{paragraph}</p>
     {/each}
+  </div>
+
+  <div class="text-center">
+    {#if data.meta.artwork_by.link}
+      <span>Artwork by <a class="font-bold" href={data.meta.artwork_by.link} target="_blank">{data.meta.artwork_by.name}</a></span>
+    {:else}
+      <span>Artwork by {data.meta.artwork_by.name}</span>
+    {/if}
+    -
+    {#if data.meta.master_by.link}
+      <span>Master by <a class="font-bold" href={data.meta.master_by.link} target="_blank">{data.meta.master_by.name}</a></span>
+    {:else}
+      <span>Master by {data.meta.master_by.name}</span>
+    {/if}
   </div>
 </section>
