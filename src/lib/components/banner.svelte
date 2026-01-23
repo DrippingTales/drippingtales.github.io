@@ -9,7 +9,7 @@
 <style>
   img {
     animation: fade-in 0.5s ease-out;
-    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
   }
 
   @keyframes fade-in {

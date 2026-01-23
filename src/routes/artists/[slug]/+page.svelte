@@ -37,8 +37,8 @@
       />
     </div>
 
-    <hgroup>
-      <h1 class="highlight text-center text-4xl">
+    <hgroup class="relative z-1">
+      <h1 class="highlight text-center text-4xl -mt-8">
         <mark>{data.meta.name}</mark>
       </h1>
     </hgroup>
