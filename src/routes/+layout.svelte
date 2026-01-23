@@ -3,8 +3,6 @@
   import Footer from "$lib/components/footer.svelte"
   import PageTransition from "./transition.svelte"
 
-  import "@fontsource/ibm-plex-mono"
-
   // TODO: should this imports be removed?
   import "open-props/style"
   import "open-props/buttons"
@@ -27,15 +25,6 @@
 </div>
 
 <style>
-  :global(body) {
-    font-family: "IBM Plex Mono", monospace;
-  }
-
-  /* HACK: this one ack weirdly */
-  :global(pre) {
-    font-family: "IBM Plex Mono", monospace;
-  }
-
   .layout {
     max-height: 100% !important;
     min-height: 100vh !important;

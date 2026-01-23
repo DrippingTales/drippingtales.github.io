@@ -21,13 +21,7 @@
 </svelte:head>
 
 <section class="flex flex-col space-y-8">
-  <hgroup>
-    <h1 class="highlight text-center text-4xl">
-      <mark>{data.meta.name}</mark>
-    </h1>
-  </hgroup>
-
-  <div class="mx-auto bg-black/70 aspect-square w-128 border-1 border-gray-400 rounded-xl">
+  <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-400 rounded-xl">
     <Image
       class="w-128 rounded-xl"
       src={imageUrl}
@@ -35,20 +29,28 @@
     />
   </div>
 
-  <div class="text-center font-bold">
-    {data.meta.date.toString().slice(0, 4)} -
-    {#if data.meta.kind == "album"}
-      Album by {data.meta.artist}
-    {:else if data.meta.kind == "compilation"}
-      Compilation
+  <div class="space-y-4">
+    <div>
+      <h1 class="highlight text-center text-4xl">
+        <mark>{data.meta.name}</mark>
+      </h1>
+    </div>
+
+    <div class="text-center font-bold">
+      {data.meta.date.toString().slice(0, 4)} -
+      {#if data.meta.kind == "album"}
+        Album by {data.meta.artist}
+      {:else if data.meta.kind == "compilation"}
+        Compilation
+      {/if}
+    </div>
+
+    {#if data.meta.social}
+      <div>
+        <SocialLinks {...data.meta.social} />
+      </div>
     {/if}
   </div>
-
-  {#if data.meta.social}
-    <div>
-      <SocialLinks {...data.meta.social} />
-    </div>
-  {/if}
 
   <div class="space-y-3 text-center">
     {#each data.meta.storytelling.split(/[\r\n]+/) as paragraph}

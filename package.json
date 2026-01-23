@@ -12,7 +12,7 @@
     "lint": "prettier --check . && eslint ."
   },
   "devDependencies": {
-    "@fontsource/ibm-plex-mono": "^5.2.6",
+    "@fontsource/geo": "^5.2.7",
     "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/enhanced-img": "^0.9.3",
     "@sveltejs/kit": "^2.25.0",

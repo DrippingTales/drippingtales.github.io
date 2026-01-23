@@ -30,7 +30,7 @@
 </svelte:head>
 
 <div class="flex min-h-full flex-col justify-center space-y-4 sm:space-y-8">
-  <div class="social-links logo2">
+  <div>
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
       bandcamp="https://drippingtalesrecords.bandcamp.com/music"
@@ -85,7 +85,9 @@
   </div>
 
   <div class="mx-auto">
-    <h1 class="highlight mb-8 text-center text-4xl">_last_release</h1>
+    <h1 class="highlight m-8 text-center text-4xl">
+      | last release |
+    </h1>
 
     <a class="size-fit" href={`/releases/${lastRelease.slug}`}>
       <div class="h-full w-full">

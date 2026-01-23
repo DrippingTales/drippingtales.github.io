@@ -2,10 +2,15 @@
   import { glitch } from "$lib/actions/glitch"
   import config from "$lib/config"
   import Banner from "$lib/components/banner.svelte"
+  import PageTitle from "$lib/components/page-title.svelte"
 </script>
 
-<header>
-  <div class="sticky w-full top-0 z-50 bg-black border-b-1 border-gray-400">
+<header class="sticky top-[calc(-6rem-1px)] sm:top-[calc(-9rem-1px)] z-50 shadow-white/10 shadow-xl/60 flex flex-col">
+  <div class="order-2 h-24 sm:h-36 overflow-hidden border-gray-400 bg-black">
+    <Banner />
+  </div>
+
+  <div class="order-1 sticky top-0 z-1 w-full bg-black border-b-1 border-gray-400 bg-black">
     <nav class="align-center flex flex-col sm:justify-between py-2 sm:flex-row sm:space-y-0 mx-auto max-w-5xl px-8">
       <a class="text-primary my-auto mx-auto sm:ml-0">
         <img
@@ -31,8 +36,10 @@
     </nav>
   </div>
 
-  <div class="h-24 sm:h-36 overflow-hidden border-b-1 border-gray-400 bg-black/96 shadow-white/10 shadow-xl/50">
-    <Banner />
+  <div class="order-3 z-1 sticky top-[52px] sm:top-[44px] border-t-1 border-b-1 text-gray-400 border-gray-400 bg-black">
+    <div class="mx-auto text-center max-w-4xl mx-2">
+      <PageTitle/>
+    </div>
   </div>
 </header>
 

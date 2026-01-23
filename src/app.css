@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
+@import "@fontsource/geo";
+
 :root {
   --primary-color: #ffffff;
   --secondary-color: #8f8e8e;
@@ -18,6 +20,9 @@
 
 html,
 body {
+  font-family: "Geo";
+  color: #b0b0b0;
+  font-size: 1.2em;
   max-height: 100% !important;
   min-height: 100vh !important;
   margin: 0;
@@ -30,7 +35,7 @@ body {
   }
   100% {
     background-position: 50px 50px;
-  }  
+  }
 }
 
 html {
@@ -39,6 +44,10 @@ html {
   background-color: var(--background-color);
   background-image: url("/assets/main/background.svg");
   animation: bg-scrolling 20s infinite;
+}
+
+h1 {
+  font-family: Geo;
 }
 
 a {

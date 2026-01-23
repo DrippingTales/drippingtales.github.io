@@ -7,7 +7,8 @@ export async function load({ params }) {
 
     return {
       content: release.default,
-      meta: { ...release.frontmatter, slug: params.slug }
+      meta: { ...release.frontmatter, slug: params.slug },
+      pageTitle: `Release: ${release.frontmatter.name}`
     }
   } catch (_error) {
     error(404, "Nothing here 🤔")
