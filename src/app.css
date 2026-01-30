@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
-@import "@fontsource/geo";
-
 :root {
   --primary-color: #ffffff;
   --secondary-color: #8f8e8e;
