@@ -25,20 +25,20 @@
 </svelte:head>
 
 <section class="flex flex-col space-y-8">
-  <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-400 rounded-xl">
-    <Image
-      class="w-128 rounded-xl"
-      src={imageUrl}
-      alt=""
-    />
-  </div>
-
   <div class="space-y-4">
-    <div>
-      <h1 class="highlight text-center text-4xl">
-        <mark>{data.meta.name}</mark>
-      </h1>
+    <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-700">
+      <Image
+        class="w-128"
+        src={imageUrl}
+        alt=""
+      />
     </div>
+
+    <hgroup>
+      <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+        {data.meta.name}
+      </div>
+    </hgroup>
 
     <div class="text-center font-bold">
       {data.meta.date.toString().slice(0, 4)} -
@@ -48,13 +48,13 @@
         Compilation
       {/if}
     </div>
-
-    {#if data.meta.social}
-      <div>
-        <SocialLinks {...data.meta.social} />
-      </div>
-    {/if}
   </div>
+
+  {#if data.meta.social}
+    <div>
+      <SocialLinks {...data.meta.social} />
+    </div>
+  {/if}
 
   <div class="space-y-3 text-center">
     {#each asParagraphs(data.meta.storytelling) as paragraph}

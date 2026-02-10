@@ -1,14 +1,19 @@
-<div>
+<div class="relative">
   <img
-    class="h-24 sm:h-36 m-auto object-cover select-none pointer-events-auto"
+    class="image-fade h-18 sm:h-24 m-auto object-cover select-none pointer-events-auto"
     draggable="false"
     src="/assets/main/banner.avif"
     alt=""
   />
+  <img
+    class="logo absolute inset-0 m-auto h-12 py-1 sm:py-4 sm:h-20 select-none pointer-events-none"
+    src="/assets/main/title.avif"
+    alt="Dripping Tales"
+  />
 </div>
 
 <style>
-  img {
+  .image-fade {
     animation: fade-in 0.5s ease-out, idle-glitch 3s steps(3, end) 0.5s infinite;
     mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
   }

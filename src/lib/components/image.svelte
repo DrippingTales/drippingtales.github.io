@@ -93,7 +93,7 @@
     width: fit-content;
     margin-inline: auto;
     background: center no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='4' viewBox='0 14 32 4' fill='%23fff'%3E%3Cpath opacity='0.8' transform='translate(0 0)' d='M2 14 V18 H6 V14z'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 24 0; 0 0' dur='2s' begin='0' repeatCount='indefinite' keySplines='0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8' calcMode='spline'/%3E%3C/path%3E%3Cpath opacity='0.5' transform='translate(0 0)' d='M0 14 V18 H8 V14z'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 24 0; 0 0' dur='2s' begin='0.1s' repeatCount='indefinite' keySplines='0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8' calcMode='spline'/%3E%3C/path%3E%3Cpath opacity='0.25' transform='translate(0 0)' d='M0 14 V18 H8 V14z'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 24 0; 0 0' dur='2s' begin='0.2s' repeatCount='indefinite' keySplines='0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8' calcMode='spline'/%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='4' viewBox='0 14 32 4' fill='%23374151'%3E%3Cpath opacity='0.8' transform='translate(0 0)' d='M2 14 V18 H6 V14z'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 24 0; 0 0' dur='2s' begin='0' repeatCount='indefinite' keySplines='0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8' calcMode='spline'/%3E%3C/path%3E%3Cpath opacity='0.5' transform='translate(0 0)' d='M0 14 V18 H8 V14z'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 24 0; 0 0' dur='2s' begin='0.1s' repeatCount='indefinite' keySplines='0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8' calcMode='spline'/%3E%3C/path%3E%3Cpath opacity='0.25' transform='translate(0 0)' d='M0 14 V18 H8 V14z'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 24 0; 0 0' dur='2s' begin='0.2s' repeatCount='indefinite' keySplines='0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8' calcMode='spline'/%3E%3C/path%3E%3C/svg%3E");
     background-size: 32px 4px;
     overflow: hidden;
   }
@@ -238,6 +238,7 @@
     40% { --row-start: 1; --row-end: 3; --col-start: 2; --col-end: 8; }
     50% { --row-start: 10; --row-end: 14; --col-start: 1; --col-end: 9; }
   }
+
   @keyframes glitch-1b {
     0% { --col-start2: 5; --col-end2: 9; --row-start2: 2; --row-end2: 12; }
     10% { --col-start2: 1; --col-end2: 9; }

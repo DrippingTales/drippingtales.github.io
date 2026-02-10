@@ -28,8 +28,8 @@
 </svelte:head>
 
 <section class="flex flex-col space-y-8">
-  <div>
-    <div class="mx-auto bg-black/70 aspect-square max-w-64 rounded-full border-2 border-gray-400">
+  <div class="relative">
+    <div class="mx-auto bg-black/70 aspect-square max-w-64 rounded-full border-2 border-gray-700">
       <Image
         class="w-64 rounded-full"
         src={imageUrl}
@@ -38,9 +38,9 @@
     </div>
 
     <hgroup class="relative z-1">
-      <h1 class="highlight text-center text-4xl -mt-8">
-        <mark>{data.meta.name}</mark>
-      </h1>
+      <div class="highlight text-center text-4xl -mt-6 bg-black/80 px-2 py-1 w-fit mx-auto">
+        {data.meta.name}
+      </div>
     </hgroup>
   </div>
 

@@ -20,7 +20,7 @@
 </svelte:head>
 
 <section class="space-y-7">
-  <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {#each data.releases as release}
       <a class="size-fit" href={`/releases/${release.slug}`}>
         <div class="h-full w-full">
