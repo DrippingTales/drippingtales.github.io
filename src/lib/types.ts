@@ -8,6 +8,7 @@ export type Release = {
   kind: string
   date: string
   slug: string
+  artist?: string
 }
 
 export type MetaInfo = {

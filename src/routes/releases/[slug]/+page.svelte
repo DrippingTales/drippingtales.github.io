@@ -5,17 +5,17 @@
   import SeoTags from "$lib/components/seo-tags.svelte"
 
   let { data } = $props()
-  let imageUrl = `/assets/releases/${data.meta.slug}.avif`
+  let imageUrl = $derived(`/assets/releases/${data.meta.slug}.avif`)
 
-  let seoTags = {
+  let seoTags = $derived({
     title: `Release: ${data.meta.name} (${data.meta.date.slice(0, 4)})`,
     description: data.meta.storytelling,
     keywords: [data.meta.name, "dripping tales", "release"],
     url: `/releases/${data.meta.slug}`,
     image: imageUrl
-  }
+  })
 
-  function asParagraphs(content) {
+  function asParagraphs(content: string) {
     return content.split(/[\r\n]+/).filter((p: string) => p.trim())
   }
 </script>

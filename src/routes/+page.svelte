@@ -22,7 +22,7 @@
   })
 
   let { data } = $props()
-  let lastRelease = data.releases[0]
+  let lastRelease = $derived(data.releases[0])
 </script>
 
 <svelte:head>

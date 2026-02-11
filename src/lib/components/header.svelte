@@ -16,18 +16,3 @@
     </div>
   </div>
 </header>
-
-<style>
-  img {
-    animation: fade-in 0.5s ease-out;
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-</style>

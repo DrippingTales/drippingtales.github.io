@@ -7,16 +7,16 @@
   import SeoTags from "$lib/components/seo-tags.svelte"
 
   let { data } = $props()
-  let imageUrl = `/assets/artists/${data.meta.slug}.avif`
+  let imageUrl = $derived(`/assets/artists/${data.meta.slug}.avif`)
   let language = $state(defaultLanguage)
 
-  let seoTags = {
+  let seoTags = $derived({
     title: `Artist: ${data.meta.name}`,
     description: data.meta.description.en,
     keywords: [data.meta.name, "dripping tales", "artist"],
     url: `/artists/${data.meta.slug}`,
     image: imageUrl
-  }
+  })
 
   onMount(() => {
     language = getLanguage()
