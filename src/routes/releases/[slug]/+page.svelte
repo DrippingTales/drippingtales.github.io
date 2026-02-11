@@ -26,9 +26,9 @@
 
 <section class="flex flex-col space-y-8">
   <div class="space-y-4">
-    <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-700">
+    <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-700 rounded-md">
       <Image
-        class="w-128"
+        class="w-128 rounded-md"
         src={imageUrl}
         alt=""
       />

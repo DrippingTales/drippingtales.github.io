@@ -8,7 +8,7 @@
   import SeoTags from "$lib/components/seo-tags.svelte"
 
   let seoTags = {
-    title: `About ~ ${config.title}`,
+    title: `Home ~ ${config.title}`,
     description: "Dripping Tales Records website",
     keywords: ["dripping tales", "records", "psytrance", "psychedelic"],
     url: "",
@@ -22,7 +22,7 @@
   })
 
   let { data } = $props()
-  let lastRelease = $derived(data.releases[0])
+  let lastReleases = $derived([data.releases[0], data.releases[1], data.releases[2]])
 </script>
 
 <svelte:head>
@@ -87,14 +87,18 @@
   <div class="mx-auto space-y-4">
     <hgroup>
       <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
-        last release
+        last releases
       </div>
     </hgroup>
 
-    <a class="size-fit" href={`/releases/${lastRelease.slug}`}>
-      <div class="h-full w-full">
-        <ReleaseCard release={lastRelease} />
-      </div>
-    </a>
+    <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {#each lastReleases as release}
+      <a class="size-fit" href={`/releases/${release.slug}`}>
+        <div class="h-full w-full">
+          <ReleaseCard release={release} />
+        </div>
+      </a>
+    {/each}
+    </div>
   </div>
 </div>

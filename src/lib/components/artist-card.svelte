@@ -11,7 +11,7 @@
 </script>
 
 <div class="relative">
-  <div class="w-full overflow-hidden border-1 border-gray-700 rounded-full bg-black/70">
+  <div class="w-full overflow-hidden border-1 border-gray-700 rounded-md bg-black/70">
     <Image class="aspect-square w-100 border-gray-700" src={imageUrl} alt="" />
     <div
       class="absolute right-6 bottom-6 bg-black/80 px-2 py-1 text-center text-3xl font-bold text-gray-300"

@@ -10,9 +10,7 @@
   let imageUrl = `/assets/releases/${props.release.slug}.avif`
 </script>
 
-<div
-  class="flex w-full flex-col overflow-hidden border-1 border-gray-700 bg-black/70 shadow-lg"
->
+<div class="flex w-full flex-col overflow-hidden border-1 border-gray-700 bg-black/70 shadow-lg rounded-md">
   <div>
     <Image
       class="aspect-square w-100"

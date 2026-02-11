@@ -6,7 +6,7 @@ export async function load({ fetch }) {
     const response = await fetch("/api/releases")
     const releases: Release[] = await response.json()
 
-    return { releases, pageTitle: "About Dripping Tales Records" }
+    return { releases }
   } catch (_error) {
     error(404, "Nothing here 🤔")
   }

@@ -7,7 +7,7 @@
   <nav class="align-center flex flex-col justify-between py-1 mx-auto max-w-5xl">
     <div class="flex flex-row justify-center space-x-2 sm:space-x-3 [&>*]:my-auto">
       <a href="/" class={[$page.url.pathname === "/" && "active"]}>
-        <span use:glitch={{ playMode: "click" }}>about</span>
+        <span use:glitch={{ playMode: "click" }}>home</span>
       </a>
       <span>·</span>
       <a href="/artists" class={[$page.url.pathname.startsWith("/artists") && "active"]}>
