@@ -68,7 +68,7 @@
   class:glitch-4={glitch && glitchVariant === 4}
   class:glitch-5={glitch && glitchVariant === 5}
 >
-  <div class="glitch-container">
+  <div class="glitch-container" style:--bg-image="url({image})">
     <img
       draggable={false}
       src={image}
@@ -122,7 +122,8 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(16, 1fr);
     z-index: 1;
-    backdrop-filter: contrast(1.1) url(#pixelate);
+    background: var(--bg-image) center / 100% 100% no-repeat;
+    filter: contrast(1.1) url(#pixelate);
     pointer-events: none;
   }
 
