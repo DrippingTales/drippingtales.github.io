@@ -70,6 +70,7 @@
 >
   <div class="glitch-container">
     <img
+      draggable={false}
       src={image}
       {alt}
       class={clazz}
