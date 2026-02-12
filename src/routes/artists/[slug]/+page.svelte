@@ -29,9 +29,9 @@
 
 <section class="flex flex-col space-y-8">
   <div class="relative">
-    <div class="mx-auto bg-black/70 aspect-square max-w-64 rounded-full border-2 border-gray-700 rounded-md">
+    <div class="mx-auto bg-black/70 aspect-square max-w-92 rounded-full border-2 border-gray-700 rounded-md">
       <Image
-        class="w-64 rounded-md"
+        class="rounded-md"
         src={imageUrl}
         alt=""
       />
