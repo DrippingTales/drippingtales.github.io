@@ -22,6 +22,10 @@
 </div>
 
 <style>
+  a {
+    font-weight: bold;
+  }
+
   a.active {
     color: white !important;
   }
