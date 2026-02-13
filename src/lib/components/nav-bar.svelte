@@ -4,8 +4,8 @@
 </script>
 
 <div class="select-none">
-  <nav class="align-center flex flex-col justify-between py-1 mx-auto max-w-5xl">
-    <div class="flex flex-row justify-center space-x-2 sm:space-x-3 [&>*]:my-auto">
+  <nav class="align-center flex flex-col justify-between sm:py-1 mx-auto max-w-5xl">
+    <div class="flex flex-row justify-center space-x-2 sm:space-x-3">
       <a href="/" class={[$page.url.pathname === "/" && "active"]}>
         <span use:glitch={{ playMode: "click" }}>home</span>
       </a>

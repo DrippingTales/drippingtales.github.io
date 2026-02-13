@@ -1,6 +1,6 @@
 <div class="relative">
   <img
-    class="image-fade h-18 sm:h-24 m-auto object-cover select-none pointer-events-auto"
+    class="image-fade h-14 sm:h-18 m-auto object-cover select-none pointer-events-auto"
     draggable="false"
     src="/assets/main/banner.avif"
     alt=""
