@@ -7,6 +7,13 @@
   let { data } = $props()
   let imageUrl = $derived(`/assets/releases/${data.meta.slug}.avif`)
 
+  function slugify(name: string) {
+    return name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+  }
+
   let seoTags = $derived({
     title: `Release: ${data.meta.name} (${data.meta.date.slice(0, 4)})`,
     description: data.meta.storytelling,
@@ -45,11 +52,11 @@
     <div class="text-center font-bold">
       {data.meta.date.toString().slice(0, 4)} -
       {#if data.meta.kind == "ep"}
-        EP by {data.meta.artist}
+        <span>EP by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}>{data.meta.artist}</a></span>
+      {:else if data.meta.kind == "album"}
+        <span>Album by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}>{data.meta.artist}</a></span>
       {:else if data.meta.kind == "compilation"}
         Compilation
-      {:else if data.meta.kind == "album"}
-        Album by {data.meta.artist}
       {/if}
     </div>
   </div>
