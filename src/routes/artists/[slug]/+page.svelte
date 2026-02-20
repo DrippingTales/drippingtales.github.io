@@ -44,11 +44,25 @@
     </hgroup>
   </div>
 
-  {#if data.meta.social}
-    <div>
-      <SocialLinks {...data.meta.social} />
+  <div class="flex flex-row justify-space-around items-center gap-4">
+    <div class="flex-1 text-left italic">
+      {#if data.meta.genre}
+        Genre: {data.meta.genre}
+      {/if}
     </div>
-  {/if}
+    
+    <div>
+      {#if data.meta.social}
+        <SocialLinks {...data.meta.social} />
+      {/if}
+    </div>
+
+    <div class="flex-1 text-right italic">
+      {#if data.meta.performance}
+        Performance: {data.meta.performance}
+      {/if}
+    </div>
+  </div>
 
   <div class="space-y-3 text-center">
     {#each data.meta.description[language].split(/[\r\n]+/) as paragraph}

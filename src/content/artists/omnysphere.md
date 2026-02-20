@@ -1,5 +1,7 @@
 ---
 name: Omnysphere
+genre: Forest
+performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/omnysphere
   facebook: https://www.facebook.com/omnyspherepsy

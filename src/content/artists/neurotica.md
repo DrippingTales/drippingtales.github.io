@@ -1,5 +1,7 @@
 ---
 name: Neurotica
+genre: Psycore, Slambiant
+performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/djneurotica
   facebook: https://www.facebook.com/alix.deswaziere

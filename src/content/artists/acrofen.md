@@ -1,5 +1,7 @@
 ---
 name: Acröfen
+genre: Forest
+performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/acrofen
   facebook: https://www.facebook.com/Acrofen

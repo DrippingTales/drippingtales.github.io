@@ -1,5 +1,7 @@
 ---
 name: Mysmatic
+genre: Forest
+performance: Live, DJ Set
 social:
   soundcloud: https://soundcloud.com/mysmatic
   facebook: https://www.facebook.com/Mysmatic

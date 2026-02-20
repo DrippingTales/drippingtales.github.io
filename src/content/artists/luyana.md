@@ -1,5 +1,7 @@
 ---
 name: Luyana
+genre: Hi-Forest
+performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/louloumba-luyana
   facebook: https://www.facebook.com/louloumbaba

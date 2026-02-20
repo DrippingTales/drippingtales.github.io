@@ -1,5 +1,7 @@
 ---
 name: Hivemind
+genre: Forest
+performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/hivemindpsy
   facebook: https://www.facebook.com/hivemindpsy

@@ -1,5 +1,7 @@
 ---
 name: Ulmo
+genre: Forest
+performance: Live, DJ Set
 social:
   soundcloud: https://soundcloud.com/ulmosounds
   facebook: https://www.facebook.com/ulmosounds
