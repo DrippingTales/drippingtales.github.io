@@ -5,11 +5,13 @@
     src="/assets/main/banner.avif"
     alt=""
   />
-  <img
-    class="logo absolute inset-0 m-auto h-12 py-1 sm:py-4 sm:h-20 select-none pointer-events-none"
-    src="/assets/main/title.avif"
-    alt="Dripping Tales"
-  />
+  <a href="/" class="absolute inset-0 m-auto flex items-center justify-center">
+    <img
+      class="logo h-12 py-1 sm:py-4 sm:h-20 select-none pointer-events-auto"
+      src="/assets/main/title.avif"
+      alt="Dripping Tales"
+    />
+  </a>
 </div>
 
 <style>
