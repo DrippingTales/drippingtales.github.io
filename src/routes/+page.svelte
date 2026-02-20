@@ -30,6 +30,27 @@
 </svelte:head>
 
 <div class="flex min-h-full flex-col justify-center space-y-4 sm:space-y-8">
+
+  {#if language == "en"}
+    <div class="space-y-4 text-center text-lg italic">
+        <p>
+          Once upon a time...
+        </p>
+        <p>
+          Psychedelic storytellers of swarming and soaring tales.
+        </p>
+    </div>
+  {:else if language == "fr"}
+    <div class="space-y-4 text-center text-lg italic">
+        <p>
+          Il était une fois...
+        </p>
+        <p>
+          Des conteurs psychédéliques d'histoires grouillantes et planantes.
+        </p>
+    </div>
+  {/if}
+
   <div>
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
@@ -40,8 +61,31 @@
     />
   </div>
 
+  <div class="mx-auto space-y-4">
+    <hgroup>
+      <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+        latest releases
+      </div>
+    </hgroup>
+
+    <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {#each lastReleases as release}
+      <a class="size-fit" href={`/releases/${release.slug}`}>
+        <div class="h-full w-full">
+          <ReleaseCard release={release} />
+        </div>
+      </a>
+    {/each}
+    </div>
+  </div>
+
   <div class="space-y-4">
     {#if language == "en"}
+      <hgroup>
+        <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+          about
+        </div>
+      </hgroup>
       <p class="text-center">
         Dripping Tales Records is a collective of friends passionate about the dark and twisted
         sides of psychedelic music. With a view to promote and share the creations of talented
@@ -60,6 +104,11 @@
         friendship and kindness are the guiding principles.
       </p>
     {:else if language == "fr"}
+      <hgroup>
+        <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+          about
+        </div>
+      </hgroup>
       <p class="text-center">
         Dripping Tales Records est un collectif d’amis passionnés par les dimensions sombres et
         tordues de la musique psychédélique. Avec l'objectif de promouvoir et de partager les
@@ -84,21 +133,5 @@
     {/if}
   </div>
 
-  <div class="mx-auto space-y-4">
-    <hgroup>
-      <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
-        latest releases
-      </div>
-    </hgroup>
-
-    <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    {#each lastReleases as release}
-      <a class="size-fit" href={`/releases/${release.slug}`}>
-        <div class="h-full w-full">
-          <ReleaseCard release={release} />
-        </div>
-      </a>
-    {/each}
-    </div>
-  </div>
+  
 </div>
