@@ -27,11 +27,13 @@
 <section class="flex flex-col space-y-8">
   <div class="space-y-4">
     <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-700 rounded-md">
-      <Image
-        class="w-128 rounded-md"
-        src={imageUrl}
-        alt=""
-      />
+      <a href={data.meta.social.smartlink} target="_blank" rel="noopener noreferrer">
+        <Image
+          class="w-128 rounded-md"
+          src={imageUrl}
+          alt=""
+        />
+      </a>
     </div>
 
     <hgroup>
@@ -42,10 +44,12 @@
 
     <div class="text-center font-bold">
       {data.meta.date.toString().slice(0, 4)} -
-      {#if data.meta.kind == "album"}
-        Album by {data.meta.artist}
+      {#if data.meta.kind == "ep"}
+        EP by {data.meta.artist}
       {:else if data.meta.kind == "compilation"}
         Compilation
+      {:else if data.meta.kind == "album"}
+        Album by {data.meta.artist}
       {/if}
     </div>
   </div>
@@ -62,17 +66,27 @@
     {/each}
   </div>
 
-  <div class="text-center">
-    {#if data.meta.artwork_by.link}
-      <span>Artwork by <a class="font-bold" href={data.meta.artwork_by.link} target="_blank">{data.meta.artwork_by.name}</a></span>
-    {:else}
-      <span>Artwork by {data.meta.artwork_by.name}</span>
-    {/if}
-    -
-    {#if data.meta.master_by.link}
-      <span>Master by <a class="font-bold" href={data.meta.master_by.link} target="_blank">{data.meta.master_by.name}</a></span>
-    {:else}
-      <span>Master by {data.meta.master_by.name}</span>
-    {/if}
+  <div class="flex flex-col text-center">
+    <div>
+      {#if data.meta.artwork_by.link}
+        <span>Artwork by <a class="font-bold" href={data.meta.artwork_by.link} target="_blank">{data.meta.artwork_by.name}</a></span>
+      {:else}
+        <span>Artwork by {data.meta.artwork_by.name}</span>
+      {/if}
+    </div>
+
+    <div>
+      {#if data.meta.master_by.link}
+        <span>Master by <a class="font-bold" href={data.meta.master_by.link} target="_blank">{data.meta.master_by.name}</a></span>
+      {:else}
+        <span>Master by {data.meta.master_by.name}</span>
+      {/if}
+    </div>
   </div>
+
+  {#if data.meta.social.soundcloud_embed}
+    <div>
+      <iframe title="player" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="{data.meta.social.soundcloud_embed}"></iframe>
+    </div>
+  {/if}
 </section>

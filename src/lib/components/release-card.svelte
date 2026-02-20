@@ -25,6 +25,8 @@
         <span>Album by {props.release.artist}</span>
       {:else if props.release.kind == "compilation"}
         <span>Compilation</span>
+      {:else if props.release.kind == "ep"}
+        <span>EP by {props.release.artist}</span>
       {/if}
     </div>
   </div>
