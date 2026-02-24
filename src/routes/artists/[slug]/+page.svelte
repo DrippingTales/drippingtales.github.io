@@ -44,20 +44,20 @@
     </hgroup>
   </div>
 
-  <div class="flex flex-row justify-space-around items-center gap-4">
-    <div class="flex-1 text-left italic">
+  <div>
+    {#if data.meta.social}
+      <SocialLinks {...data.meta.social} />
+    {/if}
+  </div>
+
+  <div>
+    <div class="italic text-center">
       {#if data.meta.genre}
-        Genre: {data.meta.genre}
-      {/if}
-    </div>
-    
-    <div>
-      {#if data.meta.social}
-        <SocialLinks {...data.meta.social} />
+         Genre: {data.meta.genre}
       {/if}
     </div>
 
-    <div class="flex-1 text-right italic">
+    <div class="italic text-center">
       {#if data.meta.performance}
         Performance: {data.meta.performance}
       {/if}
