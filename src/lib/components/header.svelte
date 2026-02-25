@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { glitch } from "$lib/actions/glitch"
-  import config from "$lib/config"
   import Banner from "$lib/components/banner.svelte"
   import NavBar from "$lib/components/nav-bar.svelte"
 </script>

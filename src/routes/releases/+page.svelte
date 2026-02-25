@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { glitch } from "$lib/actions/glitch"
   import config from "$lib/config"
   import ReleaseCard from "$lib/components/release-card.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"

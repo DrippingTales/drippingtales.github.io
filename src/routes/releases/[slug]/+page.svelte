@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { glitch } from "$lib/actions/glitch"
   import Image from "$lib/components/image.svelte"
   import SocialLinks from "$lib/components/social-links.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"

@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte"
-  import { glitch } from "$lib/actions/glitch"
   import { getLanguage, defaultLanguage } from "$lib/languages"
   import Image from "$lib/components/image.svelte"
   import SocialLinks from "$lib/components/social-links.svelte"
@@ -65,7 +64,7 @@
   </div>
 
   <div class="space-y-3 text-center">
-    {#each data.meta.description[language].split(/[\r\n]+/) as paragraph}
+    {#each data.meta.description[language].split(/[\r\n]+/) as paragraph, _id (_id)}
       <p>{paragraph}</p>
     {/each}
   </div>
