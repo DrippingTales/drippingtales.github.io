@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -29,6 +29,14 @@
         font-display: block;
       }
     </style>
+    <script>
+      (function() {
+        var available = ["en", "fr"];
+        var lang = (navigator.language || "en").substring(0, 2);
+        if (!available.includes(lang)) lang = "en";
+        document.documentElement.setAttribute("data-lang", lang);
+      })();
+    </script>
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">

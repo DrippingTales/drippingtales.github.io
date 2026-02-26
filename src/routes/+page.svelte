@@ -1,9 +1,8 @@
 <script lang="ts">
-  import { onMount } from "svelte"
   import config from "$lib/config"
   import SocialLinks from "$lib/components/social-links.svelte"
   import ReleaseCard from "$lib/components/release-card.svelte"
-  import { getLanguage, defaultLanguage } from "$lib/languages"
+  import { getLanguage } from "$lib/languages"
   import SeoTags from "$lib/components/seo-tags.svelte"
 
   let seoTags = {
@@ -16,11 +15,7 @@
 
   let { data } = $props()
   let lastReleases = $derived([data.releases[0], data.releases[1], data.releases[2]])
-  let language = $state(defaultLanguage)
-
-  onMount(() => {
-    language = getLanguage()
-  })
+  const language = getLanguage()
 </script>
 
 <svelte:head>

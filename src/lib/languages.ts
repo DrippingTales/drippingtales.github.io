@@ -1,13 +1,10 @@
+import { browser } from "$app/environment"
+
 export const availableLanguage = ["en", "fr"]
 export const defaultLanguage = "en"
 
 export const getLanguage = () => {
-  const language = navigator.language
-  const shortenLanguage = language.substring(0, 2)
-
-  if (availableLanguage.includes(shortenLanguage)) {
-    return shortenLanguage
-  } else {
-    return defaultLanguage
-  }
+  if (!browser) return defaultLanguage
+  const lang = document.documentElement.getAttribute("data-lang") ?? defaultLanguage
+  return availableLanguage.includes(lang) ? lang : defaultLanguage
 }

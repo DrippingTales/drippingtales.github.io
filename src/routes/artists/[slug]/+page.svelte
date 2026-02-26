@@ -1,13 +1,12 @@
 <script lang="ts">
-  import { onMount } from "svelte"
-  import { getLanguage, defaultLanguage } from "$lib/languages"
+  import { getLanguage } from "$lib/languages"
   import Image from "$lib/components/image.svelte"
   import SocialLinks from "$lib/components/social-links.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
 
   let { data } = $props()
   let imageUrl = $derived(`/assets/artists/${data.meta.slug}.avif`)
-  let language = $state(defaultLanguage)
+  const language = getLanguage()
 
   let seoTags = $derived({
     title: `Artist: ${data.meta.name}`,
@@ -15,10 +14,6 @@
     keywords: [data.meta.name, "dripping tales", "artist"],
     url: `/artists/${data.meta.slug}`,
     image: imageUrl
-  })
-
-  onMount(() => {
-    language = getLanguage()
   })
 </script>
 
