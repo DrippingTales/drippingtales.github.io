@@ -8,9 +8,12 @@ social:
   instagram: https://www.instagram.com/ulmo.sounds/
 description:
   en: |
-    Ulmo is Théo’s project, musician and guitarist passionate about composition, rock, and metal from a young age.
-    Inspired by nature, fantasy, ancient legends, and the mysteries of the Self and the Universe, he aims to create a unique sound with a focus on storytelling. Let yourself be carried away by his surprising, bouncy grooves, and embark on a journey through lush sounds, gloomy atmospheres, and mysterious melodies. From the tiniest source to the depths of the deepest oceans, you will encounter strange creatures and visit forgotten realms…
+    With his roots in Ardèche, France, and musician since its youth, Théo has been passionate about music writing and production ever since. While taking part in various rock and metal projects, he developed in parallel a love for electronic music. 
+    After experimenting with mixing in multiple genres for many years, 2019 saw him starting to produce a dark, organic and intense psytrance, full of grooves and surprises. 
+    Thus would manifest Ulmo: stealth yet ever-present, steady yet ever-changing, uncanny as the abyss and lively as the stream, sticking to your mind like muck to take you to defeat demons and to sing the lost tales of the elder days...
+
   fr: |
-    Ulmo est le projet de Théo, musicien et guitariste féru de composition, de rock et de metal depuis son plus jeune âge.
-    Inspiré par la nature, la fantaisie, les légendes antiques ainsi que les mystères du Soi et de l’Univers, il vise à construire un son unique avec un accent porté sur la narration. Laissez-vous entraîner par ses grooves surprenants, rebondissants, et embarquez pour un voyage à travers sons luxuriants, atmosphères lugubres et mélodies mystérieuses. De la plus minuscule source jusqu’au fin fond du plus profond des océans, vous rencontrerez des créatures étranges et visiterez des royaumes oubliés…
+    Originaire d'Ardèche et musicien depuis ses jeunes années, Théo se passionne depuis lors pour la composition et la production musicale. Tout en officiant dans différents projets rock et metal il développe en parallèle un amour pour la musique électronique. 
+    Après s'être essayé au mix dans de multiples genres pendant de nombreuses années, il se lance en 2019 dans la production d'une psytrance sombre, organique et intense, rythmée et pleine de rebondissements.
+    Ainsi s'incarnera Ulmo, discret mais toujours présent, constant mais toujours changeant, inquiétant comme les abysses et vif comme le torrent, s'agglutinant à votre esprit tel la vase pour vous emmener affronter des démons et vous chanter les contes oubliés des jours anciens...
 ---
