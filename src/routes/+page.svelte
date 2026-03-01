@@ -32,7 +32,7 @@
       email="drippingtalesrecords@gmail.com"
     />
   </div>
-    <div class="space-y-4 text-center text-2xl uppercase">
+    <div class="space-y-4 text-center text-xl uppercase">
       {#if language == "fr"}
         <p>Il était une fois...</p>
         <p>Des conteurs psychédéliques d'histoires grouillantes et planantes.</p>
