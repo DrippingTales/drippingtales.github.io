@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/ulmosounds
   facebook: https://www.facebook.com/ulmosounds
   instagram: https://www.instagram.com/ulmo.sounds/
+  email: tdeam@ik.me
 description:
   en: |
     With his roots in Ardèche, France, and musician since its youth, Théo has been passionate about music writing and production ever since. While taking part in various rock and metal projects, he developed in parallel a love for electronic music. 
