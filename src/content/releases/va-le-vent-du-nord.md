@@ -4,13 +4,15 @@ artist: Various artists
 kind: compilation
 date: 2026-02-17
 storytelling: |
-  In ages beyond remembering, each year when the nights grew longer and the snow clothed the land in white, the Assembly of Mages would gather at the uttermost edge of the world, where birds fall silent, where the night is eternal, and where no mortal soul ever dares set foot.
+  This is a tale of the Wind and our humble tribute to the North, to the beauty of its lands, to the magic of its legends and mysteries, and to the wide influence it had over the shaping of the music we love and that is today known as Forest Trance.
 
-  There, they descended into the Cavern of Creation and kindled a magical fire that burned unceasingly for three full moons. Around its shimmering light, they bent in study, deciphering the sacred grimoires concealing the secrets of the birth of all things, and the laws that bind the universe. There, together they wrought a Spell of might unrivaled by any before or since.
+  It is a place for bold visions, experimentation, and unconstrained creativity in dance music.
 
-  At the time of the equinox the Spell was cast, and carried upon the North wind it swarmed to the four corners of the Earth, bewitching all humans, beasts and growing things alike. All were then drawn into a wondrous trance, wherein they feasted and danced as one throughout the whole summer’s length.
+  For the occasion our crew was joined by good friends and guests of honor, all wizards of great talent who went and crafted these nine fine pieces of sonic poetry.
+  We send heartfelt thanks to all of you !
 
-  Nowadays the mages are not to be seen anymore. Yet the seeds they sowed have taken root, and many a tale is still told of the fates of young souls who set sail in search of the secret grimoires of old. It is said that to those who open their hearts and senses, the scent of magic can still be felt in the air; and that on certain summer nights, near towns skirting the darkest woods, the trunks of the trees may still be heard, trembling to the frenzied rhythms of hidden gatherings beneath the stars…  
+  We spared no effort in building this release and we hope you will enjoy it.
+  It comes as a beautiful CD packaged with exclusive shiny stickers !
 tracklist: |
   Alpine - Suite n°13 pour Instruments à Vent
   Mysmatic & Acröfen - Sticky Boogie
