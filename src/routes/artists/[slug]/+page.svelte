@@ -45,15 +45,15 @@
   </div>
 
   <div>
-    <div class="italic text-center">
+    <div class="text-center">
       {#if data.meta.genre}
-         Genre: {data.meta.genre}
+        <span class="font-bold">Genre:</span> <span>{data.meta.genre}</span>
       {/if}
     </div>
 
-    <div class="italic text-center">
+    <div class="text-center">
       {#if data.meta.performance}
-        Performance: {data.meta.performance}
+        <span class="font-bold">Performance:</span> <span>{data.meta.performance}</span>
       {/if}
     </div>
   </div>

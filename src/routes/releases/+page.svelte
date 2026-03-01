@@ -21,7 +21,7 @@
 <section class="space-y-4 sm:space-y-7">
   <hgroup>
     <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
-      {data.releases.length} releases
+      Releases
     </div>
   </hgroup>
   <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -33,13 +33,11 @@
 <section class="flex flex-col space-y-8">
   <div class="space-y-4">
     <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-700 rounded-md">
-      <a href={data.meta.social.smartlink} target="_blank" rel="noopener noreferrer">
-        <Image
-          class="w-128 rounded-md"
-          src={imageUrl}
-          alt=""
-        />
-      </a>
+      <Image
+        class="w-128 rounded-md"
+        src={imageUrl}
+        alt=""
+      />
     </div>
 
     <hgroup>
