@@ -22,7 +22,7 @@
   <SeoTags {...seoTags} />
 </svelte:head>
 
-<div class="flex min-h-full flex-col justify-center space-y-4 sm:space-y-8">
+<div class="flex min-h-full flex-col justify-center space-y-6 sm:space-y-8">
   <div>
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
@@ -32,7 +32,7 @@
       email="drippingtalesrecords@gmail.com"
     />
   </div>
-    <div class="space-y-4 text-center text-2xl italic">
+    <div class="space-y-4 text-center text-2xl uppercase">
       {#if language == "fr"}
         <p>Il était une fois...</p>
         <p>Des conteurs psychédéliques d'histoires grouillantes et planantes.</p>
