@@ -1,6 +1,7 @@
 ---
 name: Sarytah
 genre: Forest
+performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/sarah-tabin
   facebook: https://www.facebook.com/sarah.tabin
