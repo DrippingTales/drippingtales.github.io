@@ -27,7 +27,7 @@ social:
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/va-le-vent-du-nord
   deezer: https://link.deezer.com/s/32ttY3Jm56pixbQYThOeV
   soundcloud: https://soundcloud.com/drippingtales/sets/le-vent-du-nord-va03
-  soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2169912467&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
+  soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2169912467&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
 artwork_by:
   name: Benjamin König
 master_by:

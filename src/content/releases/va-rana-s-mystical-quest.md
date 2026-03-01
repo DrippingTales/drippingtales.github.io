@@ -13,7 +13,7 @@ social:
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/va-ranas-mystical-quest
   deezer: https://www.deezer.com/en/album/567822731
   soundcloud: https://soundcloud.com/drippingtales/sets/ranas-mystical-quest-va01
-  soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1377834502&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
+  soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1377834502&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
   spotify: https://open.spotify.com/album/0d7cy2QHydD9Gv8adci7bg
 artwork_by:
   name: Baakka Design
