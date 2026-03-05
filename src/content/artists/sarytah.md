@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/sarah-tabin
   facebook: https://www.facebook.com/sarah.tabin
   instagram: https://www.instagram.com/sarah_tbn/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     At her first festivals in 2014, Sarah discovered her true passion in electronic music: psychedelic trance. This immediately sparked her desire to produce her own music, and she took her first steps into music production. Sarah spent several years exploring and experimenting with her software, and it wasn’t until 2022 that she decided to fully dedicate herself to her musical project. Influenced by fantastical worlds and the untamed nature around her, Sarytah aims to produce dynamic psy forest tracks that blend with deep atmospheres.

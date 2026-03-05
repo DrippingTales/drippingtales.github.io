@@ -5,6 +5,7 @@ performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/user-nightvow
   facebook: https://www.facebook.com/arwin.shams
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     Deeply passionate about psychedelia, the music of Arwin, also known as Nightvow, aims to take you on a journey between worlds, discovering new dimensions where mystical creatures dwell. He uses twisted sounds layered with deep atmospheres to create this experience.

@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/mysmatic
   facebook: https://www.facebook.com/Mysmatic
   instagram: https://www.instagram.com/mysmatic.music/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     After studying drums for years, Matteo started his path in the world of electronic music in 2015. He first encountered techno frequencies by attending warehouse parties, and then experimented with producing hard industrial sounds. While continuing to explore the vast spectrum of computer-assisted music, he quickly became fascinated by psytrance and its culture.

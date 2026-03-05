@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/hivemindpsy
   facebook: https://www.facebook.com/hivemindpsy
   instagram: https://www.instagram.com/hivemindpsy/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     On a night of deep blackness, you hear for the first time a sound that seems beyond all comprehension.

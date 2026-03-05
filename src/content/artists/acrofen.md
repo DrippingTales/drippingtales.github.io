@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/acrofen
   facebook: https://www.facebook.com/Acrofen
   instagram: https://www.instagram.com/apaj.music/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     In the mystical depths of an ancient forest, the hypnotic beats of psytrance intertwine with the whispers of the leaves and the rustle of the branches. A sensory journey begins, where electronic rhythms merge harmoniously with the vital energy of nature. Ethereal sounds drift into the depths of the vegetation, creating an enchanting atmosphere where time seems suspended. At the heart of this soundscape, spirits awaken and souls connect, dancing to the rhythm of the universe and being carried away by the magic of the forest psytrance.

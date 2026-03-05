@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/louloumba-luyana
   facebook: https://www.facebook.com/louloumbaba
   instagram: https://www.instagram.com/louloumbayana/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     A violinist since the age of 5, Louise, aka Luyana, was immersed in music throughout her childhood. She discovered techno and its offshoots at festivals and rave parties, and was soon drawn to the psychedelic side of electronic music.

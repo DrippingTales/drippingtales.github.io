@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/cl-ment-lescail
   facebook: https://www.facebook.com/clement.lesky
   instagram: https://www.instagram.com/lesky_drippingtalesrecords/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     After many years of studying the darkest side of the psy scene, Lesky has finally developed his own universe—dynamic and fast-paced. He distills a fierce, effective, and energetic Darkpsy that he has showcased at several festivals in France. His style is now defined by evolving basslines complemented by sharp leads and cutting-edge effects.

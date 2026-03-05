@@ -5,6 +5,7 @@ performance: DJ Set
 social:
   soundcloud: https://on.soundcloud.com/JZ8MSeFFVVhJY0VjPr
   instagram: https://www.instagram.com/_stellarvore.music/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     Stellarvore is the Dark Psytrance DJ Set project by Vincent R., born in France in 1996.

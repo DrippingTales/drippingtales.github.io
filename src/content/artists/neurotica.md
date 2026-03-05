@@ -6,6 +6,7 @@ social:
   soundcloud: https://soundcloud.com/djneurotica
   facebook: https://www.facebook.com/alix.deswaziere
   instagram: https://www.instagram.com/alixdwz/
+  email: drippingtalesrecords@gmail.com
 description:
   en: |
     For several years, as Alix has roamed psytrance festivals, she has gradually discovered the music genres that resonate with her, consistently gravitating towards the darkest and most surreal vibes of electronic music.
