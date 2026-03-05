@@ -9,12 +9,15 @@ social:
   email: tdeam@ik.me
 description:
   en: |
-    With his roots in Ardèche, France, and musician since its youth, Théo has been passionate about music writing and production ever since. While taking part in various rock and metal projects, he developed in parallel a love for electronic music. 
-    After experimenting with mixing in multiple genres for many years, 2019 saw him starting to produce a dark, organic and intense psytrance, full of grooves and surprises. 
-    Thus would manifest Ulmo: stealth yet ever-present, steady yet ever-changing, uncanny as the abyss and lively as the stream, sticking to your mind like muck to take you to defeat demons and to sing the lost tales of the elder days...
-
+    Ulmo is the psychedelic emanation of Théo, producer, musician, DJ and sound-addict who has dabbled in multiple styles since a young age.
+    In 2019, he began meticulously crafting a dark and organic psytrance, blending diverse and bouncy rhythms with sticky sounds upon which his malevolent melodies are enveloped. He has thus developed a highly personal style with radical choices, unafraid to experiment while remaining extremely dancefloor.
+    Since then, his tracks have been released on various labels such as The Cure Collective, Nritya Sastra, Patronus Records... Introduced to the scene by Multiversal Records, his live performances have bewitched dancefloors at clubs and festival such as Eciton Gathering, Fraktal Forest, Caldera Crescendo... 
+    In 2021 he joined Dripping Tales Records, where he took part in various events’ organization and which he now co-manages.
+    Stealth yet ever-present, steady yet ever-changing, uncanny as the abyss and lively as the stream, clinging to your mind like muck, he will take you to defeat demons and sing the lost tales of the elder days...
   fr: |
-    Originaire d'Ardèche et musicien depuis ses jeunes années, Théo se passionne depuis lors pour la composition et la production musicale. Tout en officiant dans différents projets rock et metal il développe en parallèle un amour pour la musique électronique. 
-    Après s'être essayé au mix dans de multiples genres pendant de nombreuses années, il se lance en 2019 dans la production d'une psytrance sombre, organique et intense, rythmée et pleine de rebondissements.
-    Ainsi s'incarnera Ulmo, discret mais toujours présent, constant mais toujours changeant, inquiétant comme les abysses et vif comme le torrent, s'agglutinant à votre esprit tel la vase pour vous emmener affronter des démons et vous chanter les contes oubliés des jours anciens...
+    Ulmo est l’émanation psychédélique de Théo, producteur, musicien, DJ et accro du son, s’étant frotté à de multiples styles depuis tout jeune.
+    En 2019 il commence à confectionner méticuleusement une psytrance sombre et organique, mélangeant des rythmes variés et rebondissants à des sonorités gluantes sur lesquelles viennent s’envelopper ses mélodies maléfiques... Il a ainsi développé un style très personnel, aux partis pris radicaux, n’hésitant pas à expérimenter tout en restant extrêmement dancefloor.
+    Depuis lors ses morceaux ont vu le jour sur différents labels tels que The Cure Collective, Patronus Records, Nritya Sastra... Introduit à la scène par Multiversal Records, ses lives ont envoûté les dancefloors de clubs et de festivals tels qu’Eciton Gathering, Fraktal Forest, Caldera Crescendo... 
+    En 2021 il rejoint le collectif Dripping Tales Records au sein duquel il prend part à l’organisation d’événement et dont il assure à présent la co-gestion.
+    Discret mais toujours présent, constant mais toujours changeant, inquiétant comme les abysses et vif comme le torrent, il s'agglutinera à votre esprit tel la vase et vous emmènera affronter des démons et chanter les contes oubliés des jours anciens...
 ---
