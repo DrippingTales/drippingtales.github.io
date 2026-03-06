@@ -17,7 +17,7 @@
 <style>
   .image-fade {
     animation: fade-in 0.5s ease-out, idle-glitch 3s steps(3, end) 0.5s infinite;
-    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 40%, black 60%, transparent);
   }
 
   @keyframes fade-in {
