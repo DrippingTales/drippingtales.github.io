@@ -5,7 +5,7 @@ performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/acrofen
   facebook: https://www.facebook.com/Acrofen
-  instagram: https://www.instagram.com/apaj.music/
+  instagram: https://www.instagram.com/acrofen_psy/
   email: drippingtalesrecords@gmail.com
 description:
   en: |

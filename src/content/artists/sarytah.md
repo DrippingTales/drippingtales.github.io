@@ -4,8 +4,7 @@ genre: Forest
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/sarah-tabin
-  facebook: https://www.facebook.com/sarah.tabin
-  instagram: https://www.instagram.com/sarah_tbn/
+  instagram: https://www.instagram.com/sarytah_music/
   email: drippingtalesrecords@gmail.com
 description:
   en: |

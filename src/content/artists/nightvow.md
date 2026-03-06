@@ -4,7 +4,6 @@ genre: Forest
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/user-nightvow
-  facebook: https://www.facebook.com/arwin.shams
   email: drippingtalesrecords@gmail.com
 description:
   en: |

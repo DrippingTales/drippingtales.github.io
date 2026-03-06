@@ -4,8 +4,8 @@ genre: Darkpsy
 performance: Live, DJ Set
 social:
   soundcloud: https://soundcloud.com/cl-ment-lescail
-  facebook: https://www.facebook.com/clement.lesky
-  instagram: https://www.instagram.com/lesky_drippingtalesrecords/
+  facebook: https://www.facebook.com/profile.php?id=61558748590602
+  instagram: https://www.instagram.com/lesky_darkpsy/
   email: drippingtalesrecords@gmail.com
 description:
   en: |
