@@ -6,11 +6,11 @@ date: 2025-01-30
 storytelling: |
   Once lost and trapped in the shadows of a cave, a girl will rise up and break the chains of uncertainty. Accepting past mistakes and ignorance to overcome denial, she will walk the treacherous path to the exit, seeking the promising light which shines brighter and brighter at the end of the tunnel…
   These 4 tracks relate the beginning of our co-founder’s journey in finding her own sound, featuring some of her very first productions ever. Energetic and driving while also atmospheric and relaxing, Luyana draws from the rhythms of her tekno roots, blending in darkpsy and ambient influences to create a unique hi-speed forest psytrance flying through beautiful clair-obscur soundscapes…
-tracklist: |
-  1. Deep Misunderstanding
-  2. Unchaining From The Shadows
-  3. Tracking The Dazzling Light
-  4. Softly, It Settles In
+tracklist:
+  - Deep Misunderstanding
+  - Unchaining From The Shadows
+  - Tracking The Dazzling Light
+  - Softly, It Settles In
 social:
   smartlink: https://fanlink.tv/wghF
   apple_music: https://music.apple.com/us/album/pursuit-of-inner-peace/1796089929

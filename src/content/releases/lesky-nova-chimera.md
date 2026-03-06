@@ -8,11 +8,11 @@ storytelling: |
   A man, alone in front of a post-apocalyptic world that suffered from the anger of men, tries to find his path through this heavy silence and emptiness. It comes to his mind to create a chimera, a hybrid organism, to accompany him in this new chapter. But creating a life has a price. After a time, the chimera start going off the rails… and so it begins. 
   Enter the madness of a man who plays with nature and science…
   Discover the epic and relentless darkpsy sci-fi tale by Lesky.
-tracklist: |
-  1. Program That
-  2. Sigh
-  3. Nova Chimera
-  4. Glitched Mind
+tracklist:
+  - Program That
+  - Sigh
+  - Nova Chimera
+  - Glitched Mind
 social:
   smartlink: https://fanlink.tv/vHpu
   apple_music: https://music.apple.com/us/album/nova-chimera/1746913144

@@ -13,16 +13,16 @@ storytelling: |
 
   We spared no effort in building this release and we hope you will enjoy it.
   It comes as a beautiful CD packaged with exclusive shiny stickers !
-tracklist: |
-  Alpine - Suite n°13 pour Instruments à Vent
-  Mysmatic & Acröfen - Sticky Boogie
-  Ulmo - The Farthest Shore
-  Tool Assisted Monkeys - Les Voeux Volés
-  Faeyan - Le Souffle d’Atlas
-  Sarytah - Gullveig
-  Alpine - Flying Backwards on a Broomstick
-  Goch - Plants and Animals
-  Hiet - Sunnanvinden
+tracklist:
+  - Alpine - Suite n°13 pour Instruments à Vent
+  - Mysmatic & Acröfen - Sticky Boogie
+  - Ulmo - The Farthest Shore
+  - Tool Assisted Monkeys - Les Voeux Volés
+  - Faeyan - Le Souffle d’Atlas
+  - Sarytah - Gullveig
+  - Alpine - Flying Backwards on a Broomstick
+  - Goch - Plants and Animals
+  - Hiet - Sunnanvinden
 social:
   smartlink: https://fanlink.tv/wYkh 
   apple_music: https://music.apple.com/us/album/le-vent-du-nord/1874059274
