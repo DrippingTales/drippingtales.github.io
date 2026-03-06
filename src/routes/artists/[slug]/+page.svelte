@@ -32,7 +32,7 @@
     </div>
 
     <hgroup class="relative z-1">
-      <div class="highlight text-center text-4xl -mt-6 bg-black/80 px-2 py-1 w-fit mx-auto">
+      <div class="highlight text-center text-3xl -mt-6 bg-black/80 px-2 py-1 w-fit mx-auto">
         {data.meta.name}
       </div>
     </hgroup>

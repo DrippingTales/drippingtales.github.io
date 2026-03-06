@@ -41,7 +41,7 @@
     </div>
 
     <hgroup>
-      <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+      <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
         {data.meta.name}
       </div>
     </hgroup>

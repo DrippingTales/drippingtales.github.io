@@ -18,9 +18,9 @@
   <SeoTags {...seoTags} />
 </svelte:head>
 
-<section class="space-y-4 sm:space-y-7">
+<section class="space-y-2 sm:space-y-4">
   <hgroup>
-    <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+    <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
       Artists
     </div>
   </hgroup>

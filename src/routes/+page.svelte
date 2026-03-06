@@ -22,8 +22,8 @@
   <SeoTags {...seoTags} />
 </svelte:head>
 
-<div class="flex min-h-full flex-col justify-center space-y-6 sm:space-y-8">
-  <div>
+<div class="flex min-h-full flex-col justify-center space-y-7">
+  <div class="pt-4 sm:pt-0">
     <SocialLinks
       soundcloud="https://soundcloud.com/drippingtales"
       bandcamp="https://drippingtalesrecords.bandcamp.com/music"
@@ -32,18 +32,18 @@
       email="drippingtalesrecords@gmail.com"
     />
   </div>
-    <div class="space-y-4 text-center text-xl uppercase">
+    <div class="space-y-4 text-center uppercase">
       {#if language == "fr"}
         <p>Il était une fois...</p>
-        <p>Des conteurs psychédéliques d'histoires grouillantes et planantes.</p>
+        <p>Des conteurs psychédéliques d'histoires grouillantes et planantes</p>
       {:else}
         <p>Once upon a time...</p>
-        <p>Psychedelic storytellers of swarming and soaring tales.</p>
+        <p>Psychedelic storytellers of swarming and soaring tales</p>
       {/if}
     </div>
   <div class="mx-auto space-y-4">
     <hgroup>
-      <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+      <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
         Latest releases
       </div>
     </hgroup>
@@ -61,7 +61,7 @@
 
   <div class="space-y-4">
     <hgroup>
-      <div class="highlight text-center text-4xl bg-black/80 px-2 py-1 w-fit mx-auto">
+      <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
         About
       </div>
     </hgroup>
