@@ -3,7 +3,7 @@ name: Sarytah
 genre: Forest
 performance: Live
 social:
-  soundcloud: https://soundcloud.com/sarah-tabin
+  soundcloud: https://soundcloud.com/sarytahmusic
   instagram: https://www.instagram.com/sarytah_music/
   email: drippingtalesrecords@gmail.com
 description:
