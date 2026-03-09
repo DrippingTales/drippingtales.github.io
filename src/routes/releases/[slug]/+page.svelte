@@ -90,7 +90,7 @@
 
   {#if data.meta.social.soundcloud_embed}
     <div>
-      <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="{data.meta.social.soundcloud_embed}"></iframe>
+      <iframe title="{data.meta.name} on SoundCloud" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="{data.meta.social.soundcloud_embed}"></iframe>
       <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
         <a href="https://soundcloud.com/drippingtales" title="Dripping Tales Records" target="_blank" style="color: #cccccc; text-decoration: none;">Dripping Tales Records</a> · <a href="{data.meta.social.soundcloud}" title="{data.meta.name}" target="_blank" style="color: #cccccc; text-decoration: none;">{data.meta.name}</a>
       </div>

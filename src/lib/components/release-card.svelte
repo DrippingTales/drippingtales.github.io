@@ -7,7 +7,7 @@
   }
 
   let props: Props = $props()
-  let imageUrl = `/assets/releases/${props.release.slug}.avif`
+  let imageUrl = $derived(`/assets/releases/${props.release.slug}.avif`)
 </script>
 
 <div class="flex w-full flex-col overflow-hidden border-1 border-gray-700 bg-black/70 shadow-lg rounded-md">

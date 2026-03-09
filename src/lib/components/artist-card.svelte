@@ -7,7 +7,7 @@
   }
 
   let props: Props = $props()
-  let imageUrl = `/assets/artists/${props.artist.slug}.avif`
+  let imageUrl = $derived(`/assets/artists/${props.artist.slug}.avif`)
 </script>
 
 <div class="relative">
