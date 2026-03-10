@@ -10,9 +10,15 @@
       const flashClass = [...el.classList].find(c => c.startsWith("flash-"))
       if (!flashClass) return
       setTimeout(() => {
+        if (el.matches(":hover")) return
         el.style.animation = `${flashClass} 2500ms ease`
         el.addEventListener(
           "animationend",
+          () => { el.style.animation = "" },
+          { once: true }
+        )
+        el.addEventListener(
+          "mouseenter",
           () => { el.style.animation = "" },
           { once: true }
         )
