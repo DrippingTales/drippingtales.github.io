@@ -147,7 +147,7 @@
   }
 
   .svg-icon {
-    transition: fill 300ms ease, stroke 300ms ease;
+    transition: fill 150ms ease, stroke 150ms ease;
   }
 
   :global {
