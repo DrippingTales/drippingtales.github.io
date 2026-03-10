@@ -1,5 +1,6 @@
 <script lang="ts">
-  let props = $props()
+  import type { SocialLinks } from "$lib/types"
+  let props: SocialLinks = $props()
 </script>
 
 <div class="flex flex-row gap-6 justify-center h-6">
