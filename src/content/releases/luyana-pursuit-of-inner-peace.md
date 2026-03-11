@@ -19,6 +19,7 @@ social:
   soundcloud: https://soundcloud.com/drippingtales/sets/luyana-pursuit-of-inner-peace
   soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1959149177&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
   spotify: https://open.spotify.com/album/696GEMWmr24IJRmf9LUQDe
+  youtube: https://www.youtube.com/playlist?list=OLAK5uy_kU8EHbAbE853k-iSRF40Sd6AIbgPn1MTI
 artwork_by:
   name: Nabera
   link: https://www.instagram.com/nabera_artwork/
