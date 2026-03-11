@@ -1,6 +1,6 @@
 ---
 name: Neurotica
-genre: Psycore, Slambiant
+genre: Psycore, Experimental
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/neurotica-alix-dwzr

@@ -3,7 +3,7 @@ name: Goutte
 genre: Darkpsy, Dark Progressive
 performance: DJ Set
 social:
-  soundcloud: https://soundcloud.com/djgouttes
+  soundcloud: https://soundcloud.com/djgoutte
   facebook: https://www.facebook.com/djgoutte
   email: malo.guiblin@gmail.com
 description:

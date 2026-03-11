@@ -1,7 +1,7 @@
 ---
 name: Nightvow
 genre: Forest
-performance: DJ Set
+performance: Live
 social:
   soundcloud: https://soundcloud.com/user-nightvow
   email: drippingtalesrecords@gmail.com

@@ -1,7 +1,7 @@
 ---
 name: Lesky
 genre: Darkpsy
-performance: Live, DJ Set
+performance: Live
 social:
   soundcloud: https://soundcloud.com/cl-ment-lescail
   facebook: https://www.facebook.com/profile.php?id=61558748590602
