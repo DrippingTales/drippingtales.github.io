@@ -2,9 +2,10 @@
   import Image from "$lib/components/image.svelte"
   import SocialLinks from "$lib/components/social-links.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
+  import { getLanguage } from "$lib/languages"
 
   let { data } = $props()
-  let imageUrl = $derived(`/assets/releases/${data.meta.slug}.avif`)
+  let imageUrl = $derived(`/assets/music/${data.meta.slug}.avif`)
 
   function slugify(name: string) {
     return name
@@ -13,17 +14,15 @@
       .replace(/(^-|-$)/g, "")
   }
 
+  const language = getLanguage()
+
   let seoTags = $derived({
     title: `Release: ${data.meta.name} (${data.meta.date.slice(0, 4)})`,
-    description: data.meta.storytelling,
+    description: data.meta.storytelling.en,
     keywords: [data.meta.name, "dripping tales", "release"],
     url: `/music/${data.meta.slug}`,
     image: imageUrl
   })
-
-  function asParagraphs(content: string) {
-    return content.split(/[\r\n]+/).filter((p: string) => p.trim())
-  }
 </script>
 
 <svelte:head>
@@ -65,7 +64,7 @@
   {/if}
 
   <div class="space-y-3 text-center">
-    {#each asParagraphs(data.meta.storytelling) as paragraph}
+    {#each data.meta.storytelling[language].split(/[\r\n]+/) as paragraph, _id (_id)}
       <p>{paragraph}</p>
     {/each}
   </div>

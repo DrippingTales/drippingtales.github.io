@@ -3,16 +3,19 @@ name: Le Vent du Nord
 artist: Various artists
 kind: compilation
 date: 2026-02-17
-storytelling: |
-  This is a tale of the Wind and our humble tribute to the North, to the beauty of its lands, to the magic of its legends and mysteries, and to the wide influence it had over the shaping of the music we love and that is today known as Forest Trance.
-
-  It is a place for bold visions, experimentation, and unconstrained creativity in dance music.
-
-  For the occasion our crew was joined by good friends and guests of honor, all wizards of great talent who went and crafted these nine fine pieces of sonic poetry.
-  We send heartfelt thanks to all of you !
-
-  We spared no effort in building this release and we hope you will enjoy it.
-  It comes as a beautiful CD packaged with exclusive shiny stickers !
+storytelling:
+  fr: |
+    Ceci est un conte du Vent et notre humble hommage au Nord, à la beauté de ses terres, à la magie de ses légendes et de ses mystères, ainsi qu’à la vaste influence qu’il a exercée sur la formation de la musique que nous aimons et qui est aujourd’hui connue sous le nom de Forest Trance.
+    C’est un espace dédié aux visions audacieuses, à l’expérimentation et à une créativité sans contrainte.
+    Pour l’occasion notre équipe s’est entourée de bons amis et d’invités d’honneur, tous sorciers de grand talent qui ont façonné ces neuf superbes oeuvres de poésie sonore.
+    Nos remerciements les plus sincères à tous.
+    Cette compilation se présente sous la forme d’un magnifique CD accompagné de stickers brillants exclusifs !
+  en: |
+    This is a tale of the Wind and our humble tribute to the North, to the beauty of its lands, to the magic of its legends and mysteries, and to the wide influence it had over the shaping of the music we love and that is today known as Forest Trance.
+    It is a place for bold visions, experimentation, and unconstrained creativity in dance music.
+    For the occasion our crew was joined by good friends and guests of honor, all wizards of great talent who went and crafted these nine fine pieces of sonic poetry.
+    We send heartfelt thanks to all of you.
+    This compilation comes as a beautiful CD packaged with exclusive shiny stickers !
 tracklist:
   - Alpine - Suite n°13 pour Instruments à Vent
   - Mysmatic & Acröfen - Sticky Boogie
