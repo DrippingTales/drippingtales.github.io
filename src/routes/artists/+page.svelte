@@ -2,6 +2,7 @@
   import config from "$lib/config"
   import ArtistCard from "$lib/components/artist-card.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
+  import { getLanguage } from "$lib/languages.js"
 
   let { data } = $props()
 
@@ -12,6 +13,8 @@
     url: "/artists",
     image: "/assets/main/logo-plain.avif"
   }
+
+  const language = getLanguage()
 </script>
 
 <svelte:head>
@@ -21,7 +24,11 @@
 <section class="space-y-2 sm:space-y-4">
   <hgroup>
     <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
-      Artists
+      {#if language == "fr"}
+        Artistes
+      {:else}
+        Artists
+      {/if}
     </div>
   </hgroup>
   <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
