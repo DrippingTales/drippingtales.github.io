@@ -3,7 +3,7 @@ import { error } from "@sveltejs/kit"
 export async function load({ params }) {
   try {
     // NOTE: absolute /src/content should be better, but does no work
-    const release = await import(`./../../../content/releases/${params.slug}.md`)
+    const release = await import(`./../../../content/music/${params.slug}.md`)
 
     return {
       content: release.default,

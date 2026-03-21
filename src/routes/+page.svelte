@@ -44,13 +44,17 @@
   <div class="mx-auto space-y-4">
     <hgroup>
       <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
-        Latest releases
+        {#if language == "fr"}
+          Dernières sorties
+        {:else}
+          Latest releases
+        {/if}
       </div>
     </hgroup>
 
     <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {#each lastReleases as release}
-        <a class="size-fit" href={`/releases/${release.slug}`}>
+        <a class="size-fit" href={`/music/${release.slug}`}>
           <div class="h-full w-full">
             <ReleaseCard release={release} />
           </div>
@@ -62,7 +66,11 @@
   <div class="space-y-4">
     <hgroup>
       <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
-        About
+        {#if language == "fr"}
+          À propos
+        {:else}
+          About
+        {/if}
       </div>
     </hgroup>
 

@@ -17,7 +17,7 @@
     title: `Release: ${data.meta.name} (${data.meta.date.slice(0, 4)})`,
     description: data.meta.storytelling,
     keywords: [data.meta.name, "dripping tales", "release"],
-    url: `/releases/${data.meta.slug}`,
+    url: `/music/${data.meta.slug}`,
     image: imageUrl
   })
 

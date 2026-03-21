@@ -14,8 +14,8 @@
         <span use:glitch={{ playMode: "click" }}>artists</span>
       </a>
       <span>·</span>
-      <a href="/releases" class={[$page.url.pathname.startsWith("/releases") && "active"]}>
-        <span use:glitch={{ playMode: "click" }}>releases</span>
+      <a href="/music" class={[$page.url.pathname.startsWith("/music") && "active"]}>
+        <span use:glitch={{ playMode: "click" }}>music</span>
       </a>
     </div>
   </nav>

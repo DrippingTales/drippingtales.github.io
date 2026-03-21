@@ -6,7 +6,7 @@ export const prerender = true
 async function getReleases() {
   let releases: Release[] = []
 
-  const paths = import.meta.glob("/src/content/releases/*.md", { eager: true })
+  const paths = import.meta.glob("/src/content/music/*.md", { eager: true })
 
   for (const path in paths) {
     const file = paths[path]
