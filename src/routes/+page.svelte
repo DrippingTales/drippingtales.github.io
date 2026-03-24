@@ -67,26 +67,27 @@
 
     {#if language == "fr"}
       <p class="text-center">
-        Dripping Tales Records est un collectif d'amis passionnés par les univers sombres et envoûtants de la trance psychédélique. Sa mission est de partager le travail d'artistes talentueux, en privilégiant une expérience musicale immersive et narrative.
+        Dripping Tales Records est un collectif d'amis passionnés par les univers sombres et envoûtants de la trance psychédélique.
+        Sa mission est de partager le travail d'artistes talentueux, en privilégiant une expérience musicale immersive et narrative.
       </p>
       <p class="text-center">
         Le projet Dripping Tales s'articule autour de deux piliers principaux : le label et les événements.
         Tandis que le label se concentre sur la production phonographique, les événements offrent un espace psychédélique permettant aux gens de se connecter et de partager des expériences sensorielles et musicales uniques.
       </p>
       <p class="text-center">
-        Avant tout, Dripping Tales se veut un espace de partage et de respect, où amitié
-        et ouverture les sont maîtres-mots.
+        Avant tout, Dripping Tales se veut un espace de partage et de respect, où amitié et ouverture les sont maîtres-mots.
       </p>
     {:else}
       <p class="text-center">
-        Dripping Tales Records is a collective of friends passionate about the dark and twisted realms of psychedelic trance. Its mission is to share the work of talented artists with a focus on immersive and narrative-driven musical experience.
+        Dripping Tales Records is a collective of friends passionate about the dark and twisted realms of psychedelic trance.
+        Its mission is to share the work of talented artists with a focus on immersive and narrative-driven musical experience.
       </p>
       <p class="text-center">
-        The Dripping Tales project revolves around two main pillars: the label and the events. While the label focuses on phonographic production, the events provide a psychedelic platform for people to connect and share unique experiences of music and enjoyment.
+        The Dripping Tales project revolves around two main pillars: the label and the events.
+        While the label focuses on phonographic production, the events provide a psychedelic platform for people to connect and share unique experiences of music and enjoyment.
       </p>
       <p class="text-center">
-        Above all, Dripping Tales seeks to be a space sharing, and respect, where
-        friendship and openness are the guiding principles.
+        Above all, Dripping Tales seeks to be a space sharing, and respect, where friendship and openness are the guiding principles.
       </p>
     {/if}
   </div>
