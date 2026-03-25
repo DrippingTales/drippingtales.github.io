@@ -13,13 +13,13 @@ storytelling:
     La compilation comportera 4 chapitres, chacun correspondant à une étape particulière de l’aventure, accompagné d’une sélection spécifique de musique psychédélique. À travers la présentation d’un large éventail de styles Dark/Forest, allant de tempos lents à des rythmes plus rapides, l’aventure de Rana évoluera en conséquence. Entre chaque chapitre, de courtes transitions racontées par un conteur magique permettront à l’auditeur de se resituer et d’ajouter une dimension contextuelle.
     Bienvenue dans la Quête Mystique de Rana, plongeons ensemble dans cette expérience…
 social:
-  smartlink: https://fanlink.tv/vAUG
-  apple_music: https://music.apple.com/us/album/ranas-mystical-quest/1738957209
+  apple_music: https://music.apple.com/us/album/ranas-mystical-quest/1884580024
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/va-ranas-mystical-quest
-  deezer: https://www.deezer.com/en/album/567822731
+  deezer: https://www.deezer.com/en/album/938208291
   soundcloud: https://soundcloud.com/drippingtales/sets/ranas-mystical-quest-va01
   soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1377834502&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
   spotify: https://open.spotify.com/album/0d7cy2QHydD9Gv8adci7bg
+  youtube: https://www.youtube.com/watch?v=qbmcjv_dYqg&list=PLh_l-vtqo9e3w_t_Tid4JSFORUgP6G4HT
 artwork_by:
   name: Baakka Design
 master_by:

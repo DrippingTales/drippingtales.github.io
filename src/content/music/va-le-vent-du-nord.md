@@ -27,13 +27,12 @@ tracklist:
   - Goch - Plants and Animals
   - Hiet - Sunnanvinden
 social:
-  smartlink: https://fanlink.tv/wYkh 
-  apple_music: https://music.apple.com/us/album/le-vent-du-nord/1874059274
+  apple_music: https://music.apple.com/us/album/le-vent-du-nord/1884581829
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/va-le-vent-du-nord
   deezer: https://link.deezer.com/s/32ttY3Jm56pixbQYThOeV
   soundcloud: https://soundcloud.com/drippingtales/sets/le-vent-du-nord-va03
   soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2169912467&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
-  youtube: https://www.youtube.com/playlist?list=OLAK5uy_kJdo_x9upiPbQSRfqJV3pTjQ7vvtHF6VE
+  youtube: https://www.youtube.com/watch?v=YdLhsZATuxM&list=PLh_l-vtqo9e0MFipo9naJKJd8HTai7Tnb
 artwork_by:
   name: Benjamin König
 master_by:

@@ -16,14 +16,13 @@ tracklist:
   - Tracking The Dazzling Light
   - Softly, It Settles In
 social:
-  smartlink: https://fanlink.tv/wghF
-  apple_music: https://music.apple.com/us/album/pursuit-of-inner-peace/1796089929
+  apple_music: https://music.apple.com/us/album/pursuit-of-inner-peace/1884579396
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/pursuit-of-inner-peace
   deezer: https://www.deezer.com/en/album/704814761
   soundcloud: https://soundcloud.com/drippingtales/sets/luyana-pursuit-of-inner-peace
   soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1959149177&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
   spotify: https://open.spotify.com/album/696GEMWmr24IJRmf9LUQDe
-  youtube: https://www.youtube.com/playlist?list=OLAK5uy_kU8EHbAbE853k-iSRF40Sd6AIbgPn1MTI
+  youtube: https://www.youtube.com/watch?v=6k1SLP5PrXo&list=PLh_l-vtqo9e2yIUJZR5hgUb7eQxwHndpv
 artwork_by:
   name: Nabera
   link: https://www.instagram.com/nabera_artwork/

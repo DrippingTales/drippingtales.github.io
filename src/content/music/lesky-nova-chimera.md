@@ -20,14 +20,13 @@ tracklist:
   - Nova Chimera
   - Glitched Mind
 social:
-  smartlink: https://fanlink.tv/vHpu
-  apple_music: https://music.apple.com/us/album/nova-chimera/1746913144
+  apple_music: https://music.apple.com/us/album/nova-chimera/1884579537
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/ep-nova-chimera
   deezer: https://www.deezer.com/en/album/588083992
   soundcloud: https://soundcloud.com/drippingtales/sets/lesky-nova-chimera
   soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1820112156&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
   spotify: https://open.spotify.com/track/5hSc9VVh9UmNb4ec0SGBlx
-  youtube: https://www.youtube.com/playlist?list=OLAK5uy_mhSQEMCxl3cvhR_nZMJ3M14ffMzbheAps
+  youtube: https://www.youtube.com/watch?v=aL5m-ZZauXw&list=PLh_l-vtqo9e35j75fjdcgIlIEtuL1JJY5&index=1
 artwork_by:
   name: Sara Oudin
 master_by:
