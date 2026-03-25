@@ -25,19 +25,11 @@
     <div class="text-center text-xl font-bold">{props.release.name}</div>
     <div class="flex flex-row flex-wrap justify-center space-y-2 space-x-2">
       {#if props.release.kind == "album"}
-        {#if language == "fr"}
-          <span>Album par {props.release.artist}</span>
-        {:else}
-          <span>Album by {props.release.artist}</span>
-        {/if}
+        <span>Album by {props.release.artist}</span>
       {:else if props.release.kind == "compilation"}
         <span>Compilation</span>
       {:else if props.release.kind == "ep"}
-        {#if language == "fr"}
-          <span>EP par {props.release.artist}</span>
-        {:else}
-          <span>EP by {props.release.artist}</span>
-        {/if}
+        <span>EP by {props.release.artist}</span>
       {/if}
     </div>
   </div>
