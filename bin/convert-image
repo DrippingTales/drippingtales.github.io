@@ -1,0 +1,73 @@
+#!/bin/bash
+
+# Script to convert images to $size x $size px AVIF format with $quality% quality
+# Usage: ./convert-image.sh <input_file_1> [input_file_2 ...]
+
+size=700
+quality=80
+
+errors=0
+
+if ! command -v magick &>/dev/null; then
+  echo "Error: 'magick' (ImageMagick) is not available on this system."
+  exit 1
+fi
+
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <input_file_1> [input_file_2 ...]"
+  exit 1
+fi
+
+for input_file in "$@"; do
+  output_file="${input_file%.*}.avif"
+
+  # Check if the input file exists
+  if [ ! -f "$input_file" ]; then
+    echo "Error: Input file '$input_file' not found."
+    errors=$((errors + 1))
+    continue
+  fi
+
+  # Get image dimensions and real format (not trusting the file extension)
+  actual_format=$(magick identify -format "%m" "$input_file" 2>/dev/null)
+  dimensions=$(identify -format "%w %h" "$input_file")
+  width=$(echo "$dimensions" | awk '{print $1}')
+  height=$(echo "$dimensions" | awk '{print $2}')
+
+  # If the file is already a real AVIF at the target dimensions, it is already fully converted
+  if [ "$actual_format" = "AVIF" ] && [ "$width" -eq $size ] && [ "$height" -eq $size ]; then
+    echo "Warn: '$input_file' is already an AVIF at ${size}x${size} pixels."
+    read -r -p "Convert anyway? [Y/n] " answer
+    case "$answer" in
+      [nN]) continue ;;
+    esac
+  fi
+
+  # Check if image is at least size x size
+  if [ "$width" -lt $size ] || [ "$height" -lt $size ]; then
+    echo "Error: '$input_file' must be at least ${size}x${size} pixels."
+    errors=$((errors + 1))
+    continue
+  fi
+
+  # Check if image is in 1/1 ratio
+  if [ "$width" -ne "$height" ]; then
+    echo "Error: '$input_file' must be in a 1/1 ratio (squared)."
+    errors=$((errors + 1))
+    continue
+  fi
+
+  # Convert the image to AVIF format at $size (squared) at $quality
+  magick "$input_file" -resize ${size}x${size} -quality $quality "$output_file"
+
+  if [ $? -eq 0 ]; then
+    echo "Successfully converted '$input_file' to '$output_file'."
+  else
+    echo "Error: Failed to convert '$input_file'."
+    errors=$((errors + 1))
+  fi
+done
+
+if [ $errors -gt 0 ]; then
+  exit 1
+fi
