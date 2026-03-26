@@ -23,7 +23,7 @@
 
 <section class="flex flex-col space-y-8">
   <div class="relative">
-    <div class="mx-auto bg-black/70 aspect-square max-w-92 rounded-full border-2 border-gray-700 rounded-md">
+    <div class="mx-auto bg-black/70 aspect-square max-w-92 rounded-full border-2 border-gray-700 rounded-md select-none">
       <Image
         class="rounded-md"
         src={imageUrl}

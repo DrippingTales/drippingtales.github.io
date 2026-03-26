@@ -10,7 +10,7 @@
   let imageUrl = $derived(`/assets/artists/${props.artist.slug}.avif`)
 </script>
 
-<div class="relative">
+<div class="relative select-none">
   <div class="w-full overflow-hidden border-1 border-gray-700 rounded-md bg-black/70">
     <Image class="aspect-square w-100 border-gray-700" src={imageUrl} alt="" />
     <div

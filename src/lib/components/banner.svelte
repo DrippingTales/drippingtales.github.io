@@ -1,15 +1,16 @@
 <div class="relative">
   <img
     class="image-fade h-14 sm:h-18 m-auto object-cover select-none pointer-events-auto"
-    draggable="false"
     src="/assets/main/banner.avif"
     alt=""
+    draggable="false"
   />
   <a href="/" class="absolute inset-0 m-auto flex items-center justify-center">
     <img
       class="logo h-12 py-1 sm:py-4 sm:h-20 select-none pointer-events-auto"
       src="/assets/main/title.avif"
       alt="Dripping Tales"
+      draggable="false"
     />
   </a>
 </div>

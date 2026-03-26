@@ -13,7 +13,7 @@
   const language = getLanguage()
 </script>
 
-<div class="flex w-full flex-col overflow-hidden border-1 border-gray-700 bg-black/70 shadow-lg rounded-md">
+<div class="flex w-full flex-col overflow-hidden border-1 border-gray-700 bg-black/70 shadow-lg rounded-md select-none">
   <div>
     <Image
       class="aspect-square w-100"

@@ -2,7 +2,7 @@
   import config from "$lib/config"
 </script>
 
-<footer class="border-gray-700">
+<footer class="border-gray-700 select-none">
   <span class="text-gray-700" >&copy; {config.author}</span>
 </footer>
 
