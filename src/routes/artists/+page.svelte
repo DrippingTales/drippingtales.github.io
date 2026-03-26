@@ -2,7 +2,6 @@
   import config from "$lib/config"
   import ArtistCard from "$lib/components/artist-card.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
-  import { getLanguage } from "$lib/languages.js"
 
   let { data } = $props()
 
@@ -13,8 +12,6 @@
     url: "/artists",
     image: "/assets/main/logo-plain.avif"
   }
-
-  const language = getLanguage()
 </script>
 
 <svelte:head>
