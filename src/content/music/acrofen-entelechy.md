@@ -27,13 +27,13 @@ tracklist:
   - Focused on Nature
   - Sparkling Mud
 social:
-  apple_music: 
+  apple_music: https://music.apple.com/fr/album/entelechy-single/1894136252
   bandcamp: https://drippingtalesrecords.bandcamp.com/album/entelechy
-  deezer: 
+  deezer: https://www.deezer.com/fr/album/961303191
   soundcloud: https://soundcloud.com/drippingtales/sets/acrofen-entelechy
   soundcloud_embed: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2219528846%3Fsecret_token%3Ds-1AUSOmNHys3&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true
   spotify: 
-  youtube: 
+  youtube: https://www.youtube.com/playlist?list=PLh_l-vtqo9e0SOYaksT3qr67gBOn5h7WD
 artwork_by:
   name: Pacaya
   link: https://www.instagram.com/pacayart/
