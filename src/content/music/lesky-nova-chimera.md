@@ -1,5 +1,5 @@
 ---
-name: Nova Chimera 
+name: Nova Chimera
 artist: Lesky
 kind: ep
 date: 2024-05-16

@@ -1,13 +1,13 @@
 <div class="relative">
   <img
-    class="image-fade h-14 sm:h-18 m-auto object-cover select-none pointer-events-auto"
+    class="image-fade pointer-events-auto m-auto h-14 object-cover select-none sm:h-18"
     src="/assets/main/banner.avif"
     alt=""
     draggable="false"
   />
   <a href="/" class="absolute inset-0 m-auto flex items-center justify-center">
     <img
-      class="logo h-12 py-1 sm:py-4 sm:h-20 select-none pointer-events-auto"
+      class="logo pointer-events-auto h-12 py-1 select-none sm:h-20 sm:py-4"
       src="/assets/main/title.avif"
       alt="Dripping Tales"
       draggable="false"
@@ -17,7 +17,9 @@
 
 <style>
   .image-fade {
-    animation: fade-in 0.5s ease-out, idle-glitch 3s steps(3, end) 0.5s infinite;
+    animation:
+      fade-in 0.5s ease-out,
+      idle-glitch 3s steps(3, end) 0.5s infinite;
     mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
   }
 
@@ -31,7 +33,8 @@
   }
 
   @keyframes idle-glitch {
-    0%, 100% {
+    0%,
+    100% {
       transform: none;
       filter: none;
       opacity: 1;

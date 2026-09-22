@@ -3,7 +3,7 @@
 </script>
 
 <footer class="border-gray-700 select-none">
-  <span class="text-gray-700" >&copy; {config.author}</span>
+  <span class="text-gray-700">&copy; {config.author}</span>
 </footer>
 
 <style>

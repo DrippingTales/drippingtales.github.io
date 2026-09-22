@@ -1,5 +1,5 @@
 ---
-name: Pursuit of Inner Peace 
+name: Pursuit of Inner Peace
 artist: Luyana
 kind: ep
 date: 2025-01-30

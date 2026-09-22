@@ -10,7 +10,8 @@
   function slugify(name: string) {
     return name
       .toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // remove accents
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") // remove accents
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/(^-|-$)/g, "")
   }
@@ -32,16 +33,14 @@
 
 <section class="flex flex-col space-y-8">
   <div class="space-y-4">
-    <div class="mx-auto bg-black/70 aspect-square max-w-128 border-1 border-gray-700 rounded-md select-none">
-      <Image
-        class="w-128 rounded-md"
-        src={imageUrl}
-        alt=""
-      />
+    <div
+      class="mx-auto aspect-square max-w-128 rounded-md border-1 border-gray-700 bg-black/70 select-none"
+    >
+      <Image class="w-128 rounded-md" src={imageUrl} alt="" />
     </div>
 
     <hgroup>
-      <div class="highlight text-center text-3xl bg-black/80 px-2 py-1 w-fit mx-auto">
+      <div class="highlight mx-auto w-fit bg-black/80 px-2 py-1 text-center text-3xl">
         {data.meta.name}
       </div>
     </hgroup>
@@ -49,9 +48,17 @@
     <div class="text-center font-bold">
       {data.meta.date.toString().slice(0, 4)} -
       {#if data.meta.kind == "ep"}
-        <span>EP by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}>{data.meta.artist}</a></span>
+        <span
+          >EP by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}
+            >{data.meta.artist}</a
+          ></span
+        >
       {:else if data.meta.kind == "album"}
-        <span>Album by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}>{data.meta.artist}</a></span>
+        <span
+          >Album by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}
+            >{data.meta.artist}</a
+          ></span
+        >
       {:else if data.meta.kind == "compilation"}
         Compilation
       {/if}
@@ -73,7 +80,11 @@
   <div class="flex flex-col text-center">
     <div>
       {#if data.meta.artwork_by.link}
-        <span>Artwork by <a class="font-bold" href={data.meta.artwork_by.link} target="_blank">{data.meta.artwork_by.name}</a></span>
+        <span
+          >Artwork by <a class="font-bold" href={data.meta.artwork_by.link} target="_blank"
+            >{data.meta.artwork_by.name}</a
+          ></span
+        >
       {:else}
         <span>Artwork by {data.meta.artwork_by.name}</span>
       {/if}
@@ -81,7 +92,11 @@
 
     <div>
       {#if data.meta.master_by.link}
-        <span>Master by <a class="font-bold" href={data.meta.master_by.link} target="_blank">{data.meta.master_by.name}</a></span>
+        <span
+          >Master by <a class="font-bold" href={data.meta.master_by.link} target="_blank"
+            >{data.meta.master_by.name}</a
+          ></span
+        >
       {:else}
         <span>Master by {data.meta.master_by.name}</span>
       {/if}
@@ -90,9 +105,31 @@
 
   {#if data.meta.social.soundcloud_embed}
     <div class="select-none">
-      <iframe title="{data.meta.name} on SoundCloud" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="{data.meta.social.soundcloud_embed}"></iframe>
-      <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-        <a href="https://soundcloud.com/drippingtales" title="Dripping Tales Records" target="_blank" style="color: #cccccc; text-decoration: none;">Dripping Tales Records</a> · <a href="{data.meta.social.soundcloud}" title="{data.meta.name}" target="_blank" style="color: #cccccc; text-decoration: none;">{data.meta.name}</a>
+      <iframe
+        title="{data.meta.name} on SoundCloud"
+        width="100%"
+        height="450"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src={data.meta.social.soundcloud_embed}
+      ></iframe>
+      <div
+        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"
+      >
+        <a
+          href="https://soundcloud.com/drippingtales"
+          title="Dripping Tales Records"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none;">Dripping Tales Records</a
+        >
+        ·
+        <a
+          href={data.meta.social.soundcloud}
+          title={data.meta.name}
+          target="_blank"
+          style="color: #cccccc; text-decoration: none;">{data.meta.name}</a
+        >
       </div>
     </div>
   {/if}

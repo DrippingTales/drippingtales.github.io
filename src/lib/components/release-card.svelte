@@ -13,13 +13,11 @@
   const language = getLanguage()
 </script>
 
-<div class="flex w-full flex-col overflow-hidden border-1 border-gray-700 bg-black/70 shadow-lg rounded-md select-none">
+<div
+  class="flex w-full flex-col overflow-hidden rounded-md border-1 border-gray-700 bg-black/70 shadow-lg select-none"
+>
   <div>
-    <Image
-      class="aspect-square w-100"
-      src={imageUrl}
-      alt=""
-    />
+    <Image class="aspect-square w-100" src={imageUrl} alt="" />
   </div>
   <div class="border-t-1 border-gray-700 py-4">
     <div class="text-center text-xl font-bold">{props.release.name}</div>

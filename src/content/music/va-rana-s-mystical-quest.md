@@ -1,5 +1,5 @@
 ---
-name: Rana's Mystical Quest 
+name: Rana's Mystical Quest
 artist: Various artists
 kind: compilation
 date: 2022-01-11

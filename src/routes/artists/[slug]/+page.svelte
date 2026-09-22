@@ -23,16 +23,14 @@
 
 <section class="flex flex-col space-y-8">
   <div class="relative">
-    <div class="mx-auto bg-black/70 aspect-square max-w-92 rounded-full border-2 border-gray-700 rounded-md select-none">
-      <Image
-        class="rounded-md"
-        src={imageUrl}
-        alt=""
-      />
+    <div
+      class="mx-auto aspect-square max-w-92 rounded-full rounded-md border-2 border-gray-700 bg-black/70 select-none"
+    >
+      <Image class="rounded-md" src={imageUrl} alt="" />
     </div>
 
     <hgroup class="relative z-1">
-      <div class="highlight text-center text-3xl -mt-6 bg-black/80 px-2 py-1 w-fit mx-auto">
+      <div class="highlight mx-auto -mt-6 w-fit bg-black/80 px-2 py-1 text-center text-3xl">
         {data.meta.name}
       </div>
     </hgroup>
