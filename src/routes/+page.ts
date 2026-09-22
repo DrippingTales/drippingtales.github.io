@@ -7,7 +7,7 @@ export async function load({ fetch }) {
     const releases: Release[] = await response.json()
 
     return { releases }
-  } catch (_error) {
+  } catch {
     error(404, "Nothing here 🤔")
   }
 }

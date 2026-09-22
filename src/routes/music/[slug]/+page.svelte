@@ -1,11 +1,13 @@
 <script lang="ts">
   import Image from "$lib/components/image.svelte"
+  import { resolve } from "$app/paths"
   import SocialLinks from "$lib/components/social-links.svelte"
   import SeoTags from "$lib/components/seo-tags.svelte"
   import { getLanguage } from "$lib/languages"
 
   let { data } = $props()
   let imageUrl = $derived(`/assets/music/${data.meta.slug}.avif`)
+  let artistPath = $derived(`/artists/${slugify(data.meta.artist ?? "")}` as `/artists/${string}`)
 
   function slugify(name: string) {
     return name
@@ -48,17 +50,14 @@
     <div class="text-center font-bold">
       {data.meta.date.toString().slice(0, 4)} -
       {#if data.meta.kind == "ep"}
-        <span
-          >EP by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}
-            >{data.meta.artist}</a
-          ></span
-        >
+        <span>
+          EP by
+          <a class="font-bold" href={resolve(artistPath)}>
+            {data.meta.artist}
+          </a>
+        </span>
       {:else if data.meta.kind == "album"}
-        <span
-          >Album by <a class="font-bold" href={`/artists/${slugify(data.meta.artist)}`}
-            >{data.meta.artist}</a
-          ></span
-        >
+        <span>Album by <a class="font-bold" href={resolve(artistPath)}>{data.meta.artist}</a></span>
       {:else if data.meta.kind == "compilation"}
         Compilation
       {/if}
@@ -81,8 +80,11 @@
     <div>
       {#if data.meta.artwork_by.link}
         <span
-          >Artwork by <a class="font-bold" href={data.meta.artwork_by.link} target="_blank"
-            >{data.meta.artwork_by.name}</a
+          >Artwork by <a
+            class="font-bold"
+            href={data.meta.artwork_by.link}
+            target="_blank"
+            rel="external noopener noreferrer">{data.meta.artwork_by.name}</a
           ></span
         >
       {:else}
@@ -93,8 +95,11 @@
     <div>
       {#if data.meta.master_by.link}
         <span
-          >Master by <a class="font-bold" href={data.meta.master_by.link} target="_blank"
-            >{data.meta.master_by.name}</a
+          >Master by <a
+            class="font-bold"
+            href={data.meta.master_by.link}
+            target="_blank"
+            rel="external noopener noreferrer">{data.meta.master_by.name}</a
           ></span
         >
       {:else}
@@ -121,6 +126,7 @@
           href="https://soundcloud.com/drippingtales"
           title="Dripping Tales Records"
           target="_blank"
+          rel="external noopener noreferrer"
           style="color: #cccccc; text-decoration: none;">Dripping Tales Records</a
         >
         ·
@@ -128,6 +134,7 @@
           href={data.meta.social.soundcloud}
           title={data.meta.name}
           target="_blank"
+          rel="external noopener noreferrer"
           style="color: #cccccc; text-decoration: none;">{data.meta.name}</a
         >
       </div>

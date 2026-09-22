@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { resolve } from "$app/paths"
+</script>
+
 <div class="relative">
   <img
     class="image-fade pointer-events-auto m-auto h-14 object-cover select-none sm:h-18"
@@ -5,7 +9,7 @@
     alt=""
     draggable="false"
   />
-  <a href="/" class="absolute inset-0 m-auto flex items-center justify-center">
+  <a href={resolve("/")} class="absolute inset-0 m-auto flex items-center justify-center">
     <img
       class="logo pointer-events-auto h-12 py-1 select-none sm:h-20 sm:py-4"
       src="/assets/main/title.avif"

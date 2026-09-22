@@ -9,7 +9,7 @@ export async function load({ params }) {
       content: artist.default,
       meta: { ...artist.frontmatter, slug: params.slug }
     }
-  } catch (_error) {
+  } catch {
     error(404, "Nothing here 🤔")
   }
 }

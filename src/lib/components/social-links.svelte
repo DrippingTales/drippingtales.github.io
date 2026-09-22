@@ -40,7 +40,7 @@
     <a
       href={props.spotify}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Spotify"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -61,7 +61,7 @@
     <a
       href={props.deezer}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Deezer"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -83,7 +83,7 @@
     <a
       href={props.apple_music}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Apple Music"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -104,7 +104,7 @@
     <a
       href={props.soundcloud}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Soundcloud"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -126,7 +126,7 @@
     <a
       href={props.bandcamp}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Bandcamp"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -145,7 +145,7 @@
     <a
       href={props.youtube}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="YouTube"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -166,7 +166,7 @@
     <a
       href={props.discord}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Discord"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -187,7 +187,7 @@
     <a
       href={props.instagram}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Instagram"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >
@@ -210,7 +210,7 @@
     <a
       href={props.facebook}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="external noopener noreferrer"
       aria-label="Facebook"
       class="group relative flex items-center gap-2 rounded-lg font-medium text-white"
     >

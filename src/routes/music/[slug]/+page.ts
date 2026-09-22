@@ -9,7 +9,7 @@ export async function load({ params }) {
       content: release.default,
       meta: { ...release.frontmatter, slug: params.slug }
     }
-  } catch (_error) {
+  } catch {
     error(404, "Nothing here 🤔")
   }
 }

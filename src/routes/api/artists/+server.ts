@@ -4,7 +4,7 @@ import type { Artist } from "$lib/types"
 export const prerender = true
 
 async function getArtists() {
-  let artists: Artist[] = []
+  const artists: Artist[] = []
 
   const paths = import.meta.glob("/src/content/artists/*.md", { eager: true })
 

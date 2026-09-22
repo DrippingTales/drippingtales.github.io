@@ -1,5 +1,6 @@
 <script lang="ts">
   import config from "$lib/config"
+  import { resolve } from "$app/paths"
   import SocialLinks from "$lib/components/social-links.svelte"
   import ReleaseCard from "$lib/components/release-card.svelte"
   import { getLanguage } from "$lib/languages"
@@ -42,8 +43,8 @@
     <div
       class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
     >
-      {#each lastReleases as release}
-        <a class="size-fit" href={`/music/${release.slug}`}>
+      {#each lastReleases as release (release.slug)}
+        <a class="size-fit" href={resolve("/music/[slug]", { slug: release.slug })}>
           <div class="h-full w-full">
             <ReleaseCard {release} />
           </div>

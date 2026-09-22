@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { Release } from "$lib/types"
   import Image from "$lib/components/image.svelte"
-  import { getLanguage } from "$lib/languages"
 
   type Props = {
     release: Release
@@ -9,8 +8,6 @@
 
   let props: Props = $props()
   let imageUrl = $derived(`/assets/releases/${props.release.slug}.avif`)
-
-  const language = getLanguage()
 </script>
 
 <div

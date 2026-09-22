@@ -1,4 +1,4 @@
-export function fadeInWhenLoaded(node: any) {
+export function fadeInWhenLoaded(node: HTMLImageElement) {
   node.style.opacity = "0"
   node.style.transition = "opacity 0.25s ease-in-out"
 

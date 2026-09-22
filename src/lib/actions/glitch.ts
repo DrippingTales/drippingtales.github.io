@@ -17,10 +17,7 @@ const defaultOptions: GlitchPartialOptions = {
   }
 }
 
-export function glitch(
-  node: HTMLElement,
-  { event = "load", ...glitchOptions }: GlitchOpts
-) {
+export function glitch(node: HTMLElement, { event = "load", ...glitchOptions }: GlitchOpts) {
   const options = { ...defaultOptions, ...glitchOptions }
   let result: ReturnType<typeof PowerGlitch.glitch> | undefined
 
