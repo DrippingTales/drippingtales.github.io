@@ -1,12 +1,11 @@
 import { PowerGlitch } from "powerglitch"
 import type { GlitchPartialOptions } from "powerglitch"
 
-type Options = GlitchPartialOptions & {
+type GlitchOpts = GlitchPartialOptions & {
   event?: string
 }
 
-const defaultOptions: Options = {
-  event: "load",
+const defaultOptions: GlitchPartialOptions = {
   playMode: "always",
   timing: {
     duration: 10_000,
@@ -18,23 +17,27 @@ const defaultOptions: Options = {
   }
 }
 
-export function glitch(node: any, options: Options) {
-  options = { ...defaultOptions, ...options }
+export function glitch(
+  node: HTMLElement,
+  { event = "load", ...glitchOptions }: GlitchOpts
+) {
+  const options = { ...defaultOptions, ...glitchOptions }
+  let result: ReturnType<typeof PowerGlitch.glitch> | undefined
 
   const handle = () => {
-    return PowerGlitch.glitch(node, options)
+    result = PowerGlitch.glitch(node, options)
   }
 
-  // HACK: hacky conditional
-  if (options.event == "load" || options.playMode == "always") {
+  if (event === "load") {
     handle()
   } else {
-    node.addEventListener(options.event, handle)
+    node.addEventListener(event, handle)
   }
 
   return {
     destroy() {
-      node.removeEventListener(options.event, handle)
+      node.removeEventListener(event, handle)
+      result?.stopGlitch()
     }
   }
 }
