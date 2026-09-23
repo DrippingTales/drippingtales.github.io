@@ -1,3 +1,24 @@
 [tools]
 node = "24.21.0"
 npm = "12.0.2"
+
+[tasks.lint]
+description = "Check formatting and lint the project"
+run = "npm run lint"
+
+[tasks.check]
+description = "Run Svelte and TypeScript checks"
+run = "npm run check"
+
+[tasks.build]
+description = "Build the production site"
+run = "npm run build"
+
+[tasks.pre-commit]
+description = "Run checks required before committing"
+run = [
+  "mise current",
+  { task = "lint" },
+  { task = "check" },
+  { task = "build" },
+]
