@@ -1,0 +1,52 @@
+#!/bin/sh
+#
+# Pre-commit hook
+
+set -e
+
+# Checks
+
+(
+  if ! mise_bin=$(command -v mise); then
+    echo "Error: mise binary not found"
+    exit 1
+  fi
+  if test ! -x "$mise_bin"; then
+    echo "Error: mise binary is not executable"
+    exit 1
+  fi
+)
+
+# Utils
+
+h1() {
+  echo ""
+  echo "$1"
+  echo "$1" | tr '[:print:]' '-'
+  echo ""
+}
+
+# Info
+
+h1 "Environment"
+(
+  echo "- Node: $(mise current node)"
+  echo "- NPM:  $(mise current npm)"
+)
+
+# Checks
+
+h1 "$ npm run lint"
+(
+  mise exec -- npm run lint
+)
+
+h1 "$ npm run check"
+(
+  mise exec -- npm run check
+)
+
+h1 "$ npm run build"
+(
+  mise exec -- npm run build
+)
