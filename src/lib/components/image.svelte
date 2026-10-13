@@ -58,6 +58,14 @@
     )
   }
 
+  function supportsHover(event: PointerEvent) {
+    return (
+      event.pointerType !== "touch" &&
+      typeof window !== "undefined" &&
+      window.matchMedia("(any-hover: hover) and (any-pointer: fine)").matches
+    )
+  }
+
   function startHoverGlitch() {
     if (prefersReducedMotion() || !glitchOnHover || !loaded || hoverGlitching) return
 
@@ -70,12 +78,16 @@
     }
   }
 
-  function handleMouseEnter() {
+  function handlePointerEnter(event: PointerEvent) {
+    if (!supportsHover(event)) return
+
     hovered = true
     startHoverGlitch()
   }
 
-  function handleMouseLeave() {
+  function handlePointerLeave(event: PointerEvent) {
+    if (event.pointerType === "touch") return
+
     hovered = false
   }
 </script>
@@ -112,13 +124,13 @@
   class:glitch={glitch && loaded && !glitchOnHover}
   class:glitch-on-hover={glitch && loaded && glitchOnHover}
   class:glitching={glitch && loaded && glitchOnHover && hoverGlitching}
-  class:glitch-1={glitch && glitchVariant === 1}
-  class:glitch-2={glitch && glitchVariant === 2}
-  class:glitch-3={glitch && glitchVariant === 3}
-  class:glitch-4={glitch && glitchVariant === 4}
-  class:glitch-5={glitch && glitchVariant === 5}
-  onmouseenter={handleMouseEnter}
-  onmouseleave={handleMouseLeave}
+  class:glitch-1={glitch && glitchVariant === 1 && (!glitchOnHover || hoverGlitching)}
+  class:glitch-2={glitch && glitchVariant === 2 && (!glitchOnHover || hoverGlitching)}
+  class:glitch-3={glitch && glitchVariant === 3 && (!glitchOnHover || hoverGlitching)}
+  class:glitch-4={glitch && glitchVariant === 4 && (!glitchOnHover || hoverGlitching)}
+  class:glitch-5={glitch && glitchVariant === 5 && (!glitchOnHover || hoverGlitching)}
+  onpointerenter={handlePointerEnter}
+  onpointerleave={handlePointerLeave}
   onanimationend={finishHoverGlitch}
 >
   <div class="glitch-container" style:--bg-image="url({image})">
@@ -166,9 +178,7 @@
 
   /* Glitch grid overlay - positioned absolutely over the image */
   .image-wrapper.glitch .glitch-container::before,
-  .image-wrapper.glitch .glitch-container::after,
-  .image-wrapper.glitch-on-hover.glitching .glitch-container::before,
-  .image-wrapper.glitch-on-hover.glitching .glitch-container::after {
+  .image-wrapper.glitch .glitch-container::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -179,6 +189,22 @@
     background: var(--bg-image) center / 100% 100% no-repeat;
     filter: contrast(1.1) url(#pixelate);
     pointer-events: none;
+  }
+
+  @media (any-hover: hover) and (any-pointer: fine) {
+    .image-wrapper.glitch-on-hover.glitching .glitch-container::before,
+    .image-wrapper.glitch-on-hover.glitching .glitch-container::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(16, 1fr);
+      z-index: 1;
+      background: var(--bg-image) center / 100% 100% no-repeat;
+      filter: contrast(1.1) url(#pixelate);
+      pointer-events: none;
+    }
   }
 
   /* Glitch variant 1 */
