@@ -1,5 +1,4 @@
-import { json } from "@sveltejs/kit"
-import type { Release } from "$lib/types"
+import type { Release } from "#lib/types.js"
 
 export const prerender = true
 
@@ -28,5 +27,5 @@ async function getReleases() {
 
 export async function GET() {
   const releases = await getReleases()
-  return json(releases)
+  return Response.json(releases)
 }

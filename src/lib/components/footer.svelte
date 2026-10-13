@@ -1,5 +1,5 @@
 <script lang="ts">
-  import config from "$lib/config"
+  import config from "#lib/config.js"
 </script>
 
 <footer class="border-gray-700 select-none">

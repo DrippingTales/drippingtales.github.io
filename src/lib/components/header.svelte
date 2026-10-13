@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Banner from "$lib/components/banner.svelte"
-  import NavBar from "$lib/components/nav-bar.svelte"
+  import Banner from "#lib/components/banner.svelte"
+  import NavBar from "#lib/components/nav-bar.svelte"
 </script>
 
 <header class="sticky top-0 z-50 flex flex-col shadow-xl shadow-black">

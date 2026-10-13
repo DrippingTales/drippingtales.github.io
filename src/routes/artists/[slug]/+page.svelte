@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { getLanguage } from "$lib/languages"
-  import Image from "$lib/components/image.svelte"
-  import SocialLinks from "$lib/components/social-links.svelte"
-  import SeoTags from "$lib/components/seo-tags.svelte"
+  import { getLanguage } from "#lib/languages.js"
+  import Image from "#lib/components/image.svelte"
+  import SocialLinks from "#lib/components/social-links.svelte"
+  import SeoTags from "#lib/components/seo-tags.svelte"
 
   let { data } = $props()
   let imageUrl = $derived(`/assets/artists/${data.meta.slug}.avif`)

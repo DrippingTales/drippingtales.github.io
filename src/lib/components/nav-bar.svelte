@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/state"
   import { resolve } from "$app/paths"
-  import { glitch } from "$lib/actions/glitch"
+  import { glitch } from "#lib/actions/glitch.js"
 </script>
 
 <div class="select-none">

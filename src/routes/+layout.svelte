@@ -1,11 +1,7 @@
 <script lang="ts">
-  import Header from "$lib/components/header.svelte"
-  import Footer from "$lib/components/footer.svelte"
+  import Header from "#lib/components/header.svelte"
+  import Footer from "#lib/components/footer.svelte"
   import PageTransition from "./transition.svelte"
-
-  // TODO: should this imports be removed?
-  import "open-props/style"
-  import "open-props/buttons"
 
   import "../app.css"
 

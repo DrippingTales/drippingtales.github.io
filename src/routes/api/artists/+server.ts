@@ -1,5 +1,4 @@
-import { json } from "@sveltejs/kit"
-import type { Artist } from "$lib/types"
+import type { Artist } from "#lib/types.js"
 
 export const prerender = true
 
@@ -24,5 +23,5 @@ async function getArtists() {
 
 export async function GET() {
   const artists = await getArtists()
-  return json(artists)
+  return Response.json(artists)
 }

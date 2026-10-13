@@ -1,10 +1,10 @@
 <script lang="ts">
-  import config from "$lib/config"
+  import config from "#lib/config.js"
   import { resolve } from "$app/paths"
-  import SocialLinks from "$lib/components/social-links.svelte"
-  import ReleaseCard from "$lib/components/release-card.svelte"
-  import { getLanguage } from "$lib/languages"
-  import SeoTags from "$lib/components/seo-tags.svelte"
+  import SocialLinks from "#lib/components/social-links.svelte"
+  import ReleaseCard from "#lib/components/release-card.svelte"
+  import { getLanguage } from "#lib/languages.js"
+  import SeoTags from "#lib/components/seo-tags.svelte"
 
   let seoTags = {
     title: `Home ~ ${config.title}`,

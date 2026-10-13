@@ -1,8 +1,8 @@
 <script lang="ts">
-  import config from "$lib/config"
+  import config from "#lib/config.js"
   import { resolve } from "$app/paths"
-  import ArtistCard from "$lib/components/artist-card.svelte"
-  import SeoTags from "$lib/components/seo-tags.svelte"
+  import ArtistCard from "#lib/components/artist-card.svelte"
+  import SeoTags from "#lib/components/seo-tags.svelte"
 
   let { data } = $props()
 

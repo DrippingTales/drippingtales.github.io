@@ -1,4 +1,4 @@
-import type { Release } from "$lib/types"
+import type { Release } from "#lib/types.js"
 
 export async function load({ fetch }) {
   const response = await fetch("/api/music")

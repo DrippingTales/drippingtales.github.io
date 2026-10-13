@@ -1,13 +1,13 @@
 <script lang="ts">
-  import Image from "$lib/components/image.svelte"
+  import Image from "#lib/components/image.svelte"
   import { resolve } from "$app/paths"
-  import SocialLinks from "$lib/components/social-links.svelte"
-  import SeoTags from "$lib/components/seo-tags.svelte"
-  import { getLanguage } from "$lib/languages"
+  import SocialLinks from "#lib/components/social-links.svelte"
+  import SeoTags from "#lib/components/seo-tags.svelte"
+  import { getLanguage } from "#lib/languages.js"
 
   let { data } = $props()
   let imageUrl = $derived(`/assets/music/${data.meta.slug}.avif`)
-  let artistPath = $derived(`/artists/${slugify(data.meta.artist ?? "")}` as `/artists/${string}`)
+  let artistSlug = $derived(slugify(data.meta.artist ?? ""))
 
   function slugify(name: string) {
     return name
@@ -52,12 +52,16 @@
       {#if data.meta.kind == "ep"}
         <span>
           EP by
-          <a class="font-bold" href={resolve(artistPath)}>
+          <a class="font-bold" href={resolve("/artists/[slug]", { slug: artistSlug })}>
             {data.meta.artist}
           </a>
         </span>
       {:else if data.meta.kind == "album"}
-        <span>Album by <a class="font-bold" href={resolve(artistPath)}>{data.meta.artist}</a></span>
+        <span
+          >Album by <a class="font-bold" href={resolve("/artists/[slug]", { slug: artistSlug })}
+            >{data.meta.artist}</a
+          ></span
+        >
       {:else if data.meta.kind == "compilation"}
         Compilation
       {/if}

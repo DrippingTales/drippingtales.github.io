@@ -1,5 +1,5 @@
 import { error } from "@sveltejs/kit"
-import type { Release } from "$lib/types"
+import type { Release } from "#lib/types.js"
 
 export async function load({ fetch }) {
   try {

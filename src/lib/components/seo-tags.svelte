@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { MetaInfo } from "$lib/types"
-  import config from "$lib/config"
+  import type { MetaInfo } from "#lib/types.js"
+  import config from "#lib/config.js"
 
   let meta: MetaInfo = $props()
 

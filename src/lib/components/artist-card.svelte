@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { Artist } from "$lib/types"
-  import Image from "$lib/components/image.svelte"
+  import type { Artist } from "#lib/types.js"
+  import Image from "#lib/components/image.svelte"
 
   type Props = {
     artist: Artist

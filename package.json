@@ -6,6 +6,10 @@
     "node": ">=24 <25",
     "npm": ">=12 <13"
   },
+  "imports": {
+    "#lib": "./src/lib/index.js",
+    "#lib/*": "./src/lib/*"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "svelte-kit sync && vite build",
@@ -16,16 +20,17 @@
     "lint": "prettier --check . && eslint ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.70.3",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@eslint/js": "^10.0.1",
+    "@sveltejs/adapter-static": "^4.0.0",
+    "@sveltejs/kit": "^3.0.0",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
-    "eslint": "^9.39.5",
+    "eslint": "^10.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.23.0",
-    "globals": "^15.15.0",
-    "markdoc-svelte": "^4.2.0",
+    "globals": "^17.6.0",
+    "markdoc-svelte": "^5.0.0",
     "open-props": "^1.7.23",
     "powerglitch": "^2.5.0",
     "prettier": "^3.9.8",
@@ -34,8 +39,8 @@
     "svelte": "^5.57.1",
     "svelte-check": "^4.7.6",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.0",
     "typescript-eslint": "^8.70.1",
-    "vite": "^7.3.6"
+    "vite": "^8.0.12"
   }
 }

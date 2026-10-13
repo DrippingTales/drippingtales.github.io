@@ -1,8 +1,8 @@
 <script lang="ts">
-  import config from "$lib/config"
+  import config from "#lib/config.js"
   import { resolve } from "$app/paths"
-  import ReleaseCard from "$lib/components/release-card.svelte"
-  import SeoTags from "$lib/components/seo-tags.svelte"
+  import ReleaseCard from "#lib/components/release-card.svelte"
+  import SeoTags from "#lib/components/seo-tags.svelte"
 
   let { data } = $props()
 

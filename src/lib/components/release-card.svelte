@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { Release } from "$lib/types"
-  import Image from "$lib/components/image.svelte"
+  import type { Release } from "#lib/types.js"
+  import Image from "#lib/components/image.svelte"
 
   type Props = {
     release: Release

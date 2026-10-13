@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SocialLinks } from "$lib/types"
+  import type { SocialLinks } from "#lib/types.js"
 
   let props: SocialLinks = $props()
 </script>

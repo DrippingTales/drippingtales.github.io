@@ -1,4 +1,4 @@
-import { browser } from "$app/environment"
+import { browser } from "$app/env"
 
 export const availableLanguage = ["en", "fr"]
 export const defaultLanguage = "en"
