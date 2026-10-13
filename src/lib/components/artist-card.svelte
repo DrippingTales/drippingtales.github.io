@@ -4,6 +4,8 @@
 
   type Props = {
     artist: Artist
+    priority?: boolean
+    glitchOnHover?: boolean
   }
 
   let props: Props = $props()
@@ -12,7 +14,14 @@
 
 <div class="relative select-none">
   <div class="w-full overflow-hidden rounded-md border-1 border-gray-700 bg-black/70">
-    <Image class="aspect-square w-100 border-gray-700" src={imageUrl} alt="" />
+    <Image
+      class="aspect-square w-100 border-gray-700"
+      src={imageUrl}
+      alt=""
+      glitchOnHover={props.glitchOnHover}
+      loading={props.priority ? "eager" : "lazy"}
+      fetchpriority={props.priority ? "high" : undefined}
+    />
     <div
       class="absolute right-6 bottom-6 bg-black/80 px-2 py-1 text-center text-3xl font-bold text-gray-300"
     >

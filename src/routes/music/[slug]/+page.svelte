@@ -38,7 +38,7 @@
     <div
       class="mx-auto aspect-square max-w-128 rounded-md border-1 border-gray-700 bg-black/70 select-none"
     >
-      <Image class="w-128 rounded-md" src={imageUrl} alt="" />
+      <Image class="w-128 rounded-md" src={imageUrl} alt="" loading="eager" fetchpriority="high" />
     </div>
 
     <hgroup>

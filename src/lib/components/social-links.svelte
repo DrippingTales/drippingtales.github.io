@@ -1,41 +1,10 @@
 <script lang="ts">
-  import { onMount } from "svelte"
   import type { SocialLinks } from "$lib/types"
 
   let props: SocialLinks = $props()
-  let container: HTMLElement
-
-  function animateLinks() {
-    container.querySelectorAll<HTMLElement>(".svg-icon").forEach((el, i) => {
-      const flashClass = [...el.classList].find((c) => c.startsWith("flash-"))
-      if (!flashClass) return
-      setTimeout(() => {
-        if (el.matches(":hover")) return
-        el.style.animation = `${flashClass} 2500ms ease`
-        el.addEventListener(
-          "animationend",
-          () => {
-            el.style.animation = ""
-          },
-          { once: true }
-        )
-        el.addEventListener(
-          "mouseenter",
-          () => {
-            el.style.animation = ""
-          },
-          { once: true }
-        )
-      }, i * 200)
-    })
-  }
-
-  onMount(() => {
-    animateLinks()
-  })
 </script>
 
-<div bind:this={container} class="flex h-6 flex-row justify-center gap-6">
+<div class="flex h-6 flex-row justify-center gap-6">
   {#if props["spotify"]}
     <a
       href={props.spotify}
@@ -46,7 +15,7 @@
     >
       <span class="tooltip">Spotify</span>
       <svg
-        class="svg-icon flash-spotify fill-white group-hover:fill-green-500"
+        class="svg-icon fill-white group-hover:fill-green-500"
         viewBox="-3 -3 38 38"
         aria-hidden="true"
       >
@@ -67,7 +36,7 @@
     >
       <span class="tooltip">Deezer</span>
       <svg
-        class="svg-icon flash-deezer fill-white group-hover:fill-purple-500"
+        class="svg-icon fill-white group-hover:fill-purple-500"
         viewBox="-136 -136 1705 1703"
         aria-hidden="true"
       >
@@ -89,7 +58,7 @@
     >
       <span class="tooltip">Apple Music</span>
       <svg
-        class="svg-icon flash-apple fill-white group-hover:fill-rose-500"
+        class="svg-icon fill-white group-hover:fill-rose-500"
         viewBox="-2.3 -2.3 28.6 28.6"
         aria-hidden="true"
       >
@@ -110,7 +79,7 @@
     >
       <span class="tooltip">Soundcloud</span>
       <svg
-        class="svg-icon flash-soundcloud fill-white group-hover:fill-orange-500"
+        class="svg-icon fill-white group-hover:fill-orange-500"
         viewBox="0 -4.5 20 20"
         aria-hidden="true"
       >
@@ -132,7 +101,7 @@
     >
       <span class="tooltip">Bandcamp</span>
       <svg
-        class="svg-icon flash-bandcamp fill-white group-hover:fill-teal-600"
+        class="svg-icon fill-white group-hover:fill-teal-600"
         viewBox="0 0 512 512"
         aria-hidden="true"
       >
@@ -151,7 +120,7 @@
     >
       <span class="tooltip">YouTube</span>
       <svg
-        class="svg-icon flash-youtube fill-white group-hover:fill-red-600"
+        class="svg-icon fill-white group-hover:fill-red-600"
         viewBox="0 0 256 256"
         aria-hidden="true"
       >
@@ -172,7 +141,7 @@
     >
       <span class="tooltip">Discord</span>
       <svg
-        class="svg-icon flash-discord fill-white group-hover:fill-indigo-700"
+        class="svg-icon fill-white group-hover:fill-indigo-700"
         viewBox="0 0 24 24"
         aria-hidden="true"
       >
@@ -193,7 +162,7 @@
     >
       <span class="tooltip">Instagram</span>
       <svg
-        class="svg-icon flash-instagram fill-white group-hover:fill-pink-500"
+        class="svg-icon fill-white group-hover:fill-pink-500"
         viewBox="0 0 24 24"
         aria-hidden="true"
       >
@@ -216,7 +185,7 @@
     >
       <span class="tooltip">Facebook</span>
       <svg
-        class="svg-icon flash-facebook fill-white group-hover:fill-blue-600"
+        class="svg-icon fill-white group-hover:fill-blue-600"
         viewBox="0 0 24 24"
         aria-hidden="true"
       >
@@ -237,7 +206,7 @@
     >
       <span class="tooltip">Email</span>
       <svg
-        class="svg-icon flash-email fill-white group-hover:fill-red-400"
+        class="svg-icon fill-white group-hover:fill-red-400"
         viewBox="0 0 24 24"
         aria-hidden="true"
       >
@@ -278,98 +247,5 @@
     transition:
       fill 150ms ease,
       stroke 150ms ease;
-  }
-
-  :global {
-    @keyframes flash-apple {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #f43f5e;
-      }
-    }
-    @keyframes flash-bandcamp {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #0d9488;
-      }
-    }
-    @keyframes flash-deezer {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #a855f7;
-      }
-    }
-    @keyframes flash-discord {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #4338ca;
-      }
-    }
-    @keyframes flash-email {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #f87171;
-      }
-    }
-    @keyframes flash-facebook {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #2563eb;
-      }
-    }
-    @keyframes flash-instagram {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #ec4899;
-      }
-    }
-    @keyframes flash-soundcloud {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #f97316;
-      }
-    }
-    @keyframes flash-spotify {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #22c55e;
-      }
-    }
-    @keyframes flash-youtube {
-      0%,
-      100% {
-        fill: white;
-      }
-      50% {
-        fill: #dc2626;
-      }
-    }
   }
 </style>

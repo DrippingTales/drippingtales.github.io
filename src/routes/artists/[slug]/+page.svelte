@@ -26,7 +26,7 @@
     <div
       class="mx-auto aspect-square max-w-92 rounded-full rounded-md border-2 border-gray-700 bg-black/70 select-none"
     >
-      <Image class="rounded-md" src={imageUrl} alt="" />
+      <Image class="rounded-md" src={imageUrl} alt="" loading="eager" fetchpriority="high" />
     </div>
 
     <hgroup class="relative z-1">

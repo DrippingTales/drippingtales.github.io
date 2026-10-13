@@ -4,9 +4,20 @@
     alt: string
     class?: string
     glitch?: boolean
+    glitchOnHover?: boolean
+    loading?: "eager" | "lazy"
+    fetchpriority?: "high" | "low" | "auto"
   }
 
-  let { src, alt, class: clazz, glitch = true }: Props = $props()
+  let {
+    src,
+    alt,
+    class: clazz,
+    glitch = true,
+    glitchOnHover = false,
+    loading = "lazy",
+    fetchpriority
+  }: Props = $props()
 
   // Glob import all content images
   const imageModules = import.meta.glob<string>(
@@ -28,6 +39,7 @@
 
   function handleLoad() {
     loaded = true
+    if (hovered) startHoverGlitch()
   }
 
   function checkComplete(img: HTMLImageElement) {
@@ -35,6 +47,36 @@
     if (img.complete && img.naturalHeight !== 0) {
       loaded = true
     }
+  }
+
+  let hovered = $state(false)
+  let hoverGlitching = $state(false)
+
+  function prefersReducedMotion() {
+    return (
+      typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+  }
+
+  function startHoverGlitch() {
+    if (prefersReducedMotion() || !glitchOnHover || !loaded || hoverGlitching) return
+
+    hoverGlitching = true
+  }
+
+  function finishHoverGlitch(event: AnimationEvent) {
+    if (event.animationName.endsWith("b")) {
+      hoverGlitching = false
+    }
+  }
+
+  function handleMouseEnter() {
+    hovered = true
+    startHoverGlitch()
+  }
+
+  function handleMouseLeave() {
+    hovered = false
   }
 </script>
 
@@ -64,14 +106,20 @@
 </svg>
 
 <div
+  role="presentation"
   class="image-wrapper"
   class:loaded
-  class:glitch={glitch && loaded}
+  class:glitch={glitch && loaded && !glitchOnHover}
+  class:glitch-on-hover={glitch && loaded && glitchOnHover}
+  class:glitching={glitch && loaded && glitchOnHover && hoverGlitching}
   class:glitch-1={glitch && glitchVariant === 1}
   class:glitch-2={glitch && glitchVariant === 2}
   class:glitch-3={glitch && glitchVariant === 3}
   class:glitch-4={glitch && glitchVariant === 4}
   class:glitch-5={glitch && glitchVariant === 5}
+  onmouseenter={handleMouseEnter}
+  onmouseleave={handleMouseLeave}
+  onanimationend={finishHoverGlitch}
 >
   <div class="glitch-container" style:--bg-image="url({image})">
     <img
@@ -79,7 +127,8 @@
       src={image}
       {alt}
       class={clazz}
-      loading="lazy"
+      {loading}
+      {fetchpriority}
       onload={handleLoad}
       use:checkComplete
     />
@@ -113,13 +162,13 @@
     display: block;
     max-width: 100%;
     margin-inline: auto;
-    opacity: 0;
-    transition: opacity 0.15s ease-in;
   }
 
   /* Glitch grid overlay - positioned absolutely over the image */
   .image-wrapper.glitch .glitch-container::before,
-  .image-wrapper.glitch .glitch-container::after {
+  .image-wrapper.glitch .glitch-container::after,
+  .image-wrapper.glitch-on-hover.glitching .glitch-container::before,
+  .image-wrapper.glitch-on-hover.glitching .glitch-container::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -130,10 +179,6 @@
     background: var(--bg-image) center / 100% 100% no-repeat;
     filter: contrast(1.1) url(#pixelate);
     pointer-events: none;
-  }
-
-  .image-wrapper.loaded img {
-    opacity: 1;
   }
 
   /* Glitch variant 1 */
@@ -571,6 +616,21 @@
       --col-end2: 4;
       --row-start2: 8;
       --row-end2: 8;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .image-wrapper {
+      background-image: none;
+    }
+
+    .image-wrapper.glitch .glitch-container::before,
+    .image-wrapper.glitch .glitch-container::after,
+    .image-wrapper.glitch-on-hover.glitching .glitch-container::before,
+    .image-wrapper.glitch-on-hover.glitching .glitch-container::after {
+      display: none;
+      content: none;
+      animation: none;
     }
   }
 </style>

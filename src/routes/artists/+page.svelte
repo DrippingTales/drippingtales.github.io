@@ -24,10 +24,10 @@
     <div class="highlight mx-auto w-fit bg-black/80 px-2 py-1 text-center text-3xl">Artists</div>
   </hgroup>
   <div class="mx-auto grid size-fit grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    {#each data.artists as artist (artist.slug)}
+    {#each data.artists as artist, index (artist.slug)}
       <a class="size-fit" href={resolve("/artists/[slug]", { slug: artist.slug })}>
         <div class="h-full w-full">
-          <ArtistCard {artist} />
+          <ArtistCard {artist} priority={index === 0} glitchOnHover />
         </div>
       </a>
     {/each}
