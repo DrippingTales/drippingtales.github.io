@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browser } from "$app/env"
   import type { Snippet } from "svelte"
   import { onMount } from "svelte"
   import { fade } from "svelte/transition"
@@ -9,14 +10,14 @@
   }
 
   let { children, url }: Props = $props()
-  let mounted = $state(false)
-  let reducedMotion = $state(false)
+  let reducedMotion = $state(
+    browser && window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  )
 
   onMount(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
     const updateMotionPreference = () => {
       reducedMotion = mediaQuery.matches
-      mounted = true
     }
 
     updateMotionPreference()
@@ -27,7 +28,7 @@
 </script>
 
 {#key url}
-  <div class="h-full" in:fade={{ duration: mounted && !reducedMotion ? 650 : 0 }}>
+  <div class="h-full" in:fade={{ duration: reducedMotion ? 0 : 650 }}>
     {@render children?.()}
   </div>
 {/key}
