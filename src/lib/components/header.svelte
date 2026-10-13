@@ -3,7 +3,7 @@
   import NavBar from "#lib/components/nav-bar.svelte"
 </script>
 
-<header class="sticky top-0 z-50 flex flex-col shadow-xl shadow-black">
+<header class="fade-in sticky top-0 z-50 flex flex-col shadow-xl shadow-black">
   <div class="overflow-hidden border-gray-700 bg-black">
     <Banner />
   </div>
