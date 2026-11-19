@@ -1,15 +1,16 @@
 ---
-name: Acröfen
+name: Arkunay
 genre: Forest
 performance: DJ Set
 social:
-  soundcloud: https://soundcloud.com/acrofen
-  facebook: https://www.facebook.com/Acrofen
-  instagram: https://www.instagram.com/acrofen_psy/
+  soundcloud: https://soundcloud.com/arkunay 
+  instagram: https://www.instagram.com/arkunay/
   email: drippingtalesrecords@gmail.com
 description:
   en: |
-    In the mystical depths of an ancient forest, the hypnotic beats of psytrance intertwine with the whispers of the leaves and the rustle of the branches. A sensory journey begins, where electronic rhythms merge harmoniously with the vital energy of nature. Ethereal sounds drift into the depths of the vegetation, creating an enchanting atmosphere where time seems suspended. At the heart of this soundscape, spirits awaken and souls connect, dancing to the rhythm of the universe and being carried away by the magic of the forest psytrance.
+    Born and raised in the Nantes' region of France, Arkunay grew up immersed in classical music before eventually ending up into psychedelic rock. He spent the last decade wandering through festivals and parties, where he fell in love with Psytrance, and more specifically Forest, which is the core sound of his project. In 2022 he boarded on a collective adventure with Anoma, an organization setting up parties in Nantes as well as the festival of the same name !
+    In 2026 he joins Dripping Tales Records as a label DJ and producer.
   fr: |
-    Dans les profondeurs mystiques d’une forêt ancestrale, les battements hypnotiques de la psytrance s’entremêlent avec les murmures des feuilles et le frisson des branches. Un voyage sensoriel débute, où les rythmes électroniques fusionnent harmonieusement avec l’énergie vitale de la nature. Les sons éthérés se perdent dans les tréfonds de la végétation, créant une atmosphère envoûtante où le temps semble suspendu. Au cœur de ce paysage sonore, les esprits s’éveillent et les âmes se connectent, dansant au rythme de l’univers et se laissant emporter par la magie de la psytrance forestière.
+    Enfant de la région Nantaise, Arkunay a baigné dans la musique classique avant de finir dans le rock psychédélique. Il a passé la dernière décennie à écumer festivals et soirées, et est tombé amoureux de la Psytrance, plus particulièrement de la Forest, qui est le style principal de son projet. En 2022, il se lance dans une aventure collective avec Anoma, une association organisant des soirées à Nantes ainsi que le festival du même nom !
+    En 2026 il rejoint Dripping Tales Records en tant que label DJ et producteur.
 ---
