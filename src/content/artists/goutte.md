@@ -1,6 +1,7 @@
 ---
 name: Goutte
 genre: Darkpsy, Dark Progressive
+vibe: Powerful, varied
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/djgoutte

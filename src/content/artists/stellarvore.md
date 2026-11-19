@@ -1,6 +1,7 @@
 ---
 name: Stellarvore
 genre: Darkpsy
+vibe: Powerful, evocative
 performance: DJ Set
 social:
   soundcloud: https://on.soundcloud.com/JZ8MSeFFVVhJY0VjPr

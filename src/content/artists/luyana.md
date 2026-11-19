@@ -1,6 +1,7 @@
 ---
 name: Luyana
 genre: Hi-Forest
+vibe: Fluid, energetic
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/louloumba-luyana

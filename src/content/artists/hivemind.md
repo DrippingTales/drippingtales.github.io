@@ -1,6 +1,7 @@
 ---
 name: Hivemind
 genre: Forest
+vibe: Atmospheric, meditative
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/hivemindpsy

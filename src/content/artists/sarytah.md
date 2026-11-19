@@ -1,6 +1,7 @@
 ---
 name: Sarytah
 genre: Forest
+vibe: Twisted, mystical
 performance: Live
 social:
   soundcloud: https://soundcloud.com/sarytahmusic

@@ -1,6 +1,7 @@
 ---
 name: Omnysphere
 genre: Forest
+vibe: Atmospheric, introspective
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/omnysphere

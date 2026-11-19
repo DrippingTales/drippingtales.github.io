@@ -1,6 +1,7 @@
 ---
 name: Lesky
 genre: Darkpsy
+vibe: Electric, modern
 performance: Live
 social:
   soundcloud: https://soundcloud.com/cl-ment-lescail

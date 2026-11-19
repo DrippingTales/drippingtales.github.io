@@ -1,6 +1,7 @@
 ---
 name: Acröfen
 genre: Forest
+vibe: Dynamic, playful
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/acrofen

@@ -1,6 +1,7 @@
 ---
 name: Mysmatic
 genre: Forest
+vibe: Deep, intense
 performance: Live, DJ Set
 social:
   soundcloud: https://soundcloud.com/mysmatic

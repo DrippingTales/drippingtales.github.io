@@ -1,6 +1,7 @@
 ---
 name: Arkunay
 genre: Forest
+vibe: Deep, playful
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/arkunay

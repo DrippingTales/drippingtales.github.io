@@ -1,6 +1,7 @@
 ---
 name: Neurotica
 genre: Psycore, Experimental
+vibe: Intense, cosy
 performance: DJ Set
 social:
   soundcloud: https://soundcloud.com/neurotica-alix-dwzr

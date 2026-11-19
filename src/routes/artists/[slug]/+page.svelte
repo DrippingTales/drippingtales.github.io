@@ -50,6 +50,12 @@
     </div>
 
     <div class="text-center">
+      {#if data.meta.vibe}
+        <span class="font-bold">Vibe:</span> <span>{data.meta.vibe}</span>
+      {/if}
+    </div>
+
+    <div class="text-center">
       {#if data.meta.performance}
         <span class="font-bold">Performance:</span> <span>{data.meta.performance}</span>
       {/if}

@@ -1,6 +1,7 @@
 ---
 name: Nightvow
 genre: Forest
+vibe: Deep, swarming
 performance: Live
 social:
   soundcloud: https://soundcloud.com/user-nightvow

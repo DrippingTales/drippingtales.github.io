@@ -1,6 +1,7 @@
 ---
 name: Ulmo
 genre: Forest
+vibe: Bouncy, melodic
 performance: Live, DJ Set
 social:
   soundcloud: https://soundcloud.com/ulmosounds
